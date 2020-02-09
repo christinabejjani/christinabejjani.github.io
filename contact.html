@@ -88,19 +88,15 @@ input[type=submit]:hover {
 		<section id="page-contact" class="page-contact">
 			<div class="container">
 
-			<header class="section-header">
-				<h2 class="section-title"><span>Contact</span></h2>
-				<div class="spacer"></div>
-			</header>
 			  <form class="form-horizontal" id="contactForm" action="https://formspree.io/mvoawoqy" method="POST">
 				  <label for="fname"><b>Name</b></label>
 				<input type="text" id="fname" name="firstname" placeholder="Your first name...">
 
 				  <label for="emailaddress"><b>Email Address</b></label>
-				  <p><input type="email" id="emailaddress" name="_replyto" placeholder="Your email..."></p>
+				  <p><input type="text" id="emailaddress" name="_replyto" placeholder="Your email..."></p>
 
-				  <p> <label for="subject"><b>Message</b></label></p>
-				<textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+				  <label for="subject"><b>Message</b></label>
+				<p><textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea></p>
 
 				<input type="submit" value="Submit">
 			  </form>
