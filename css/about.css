@@ -1,0 +1,15 @@
+:root {
+  --input-padding-x: 1.5rem;
+  --input-padding-y: 0.75rem;
+}
+
+.about,
+.image {
+  min-height: 100vh;
+}
+
+.bg-image {
+  background-image: url('https://christinabejjani.github.io/files/ChristinaBejjani.png');
+  background-size: cover;
+  background-position: center;
+}
