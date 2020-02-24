@@ -3,17 +3,14 @@
 }
 
 a:link {
-  text-decoration:none;
   color: #367eb8;
 }
 
 a:visited {
-  text-decoration:none;
   color: #367eb8;
 }
 
 a:hover {
-  text-decoration:underline;
   color: #a29668;
 }
 
@@ -112,6 +109,24 @@ a.svg {
     background-color: #1DA1F2;
 }
 
-.icon-up:hover {
-    fill: #353b48;
-}
+.bttn {width: 200px; text-align: center}
+
+.b-right {margin-left: auto}
+
+.f6{font-size:.875rem}
+
+.link{text-decoration:none}.link,.link:active,.link:focus,.link:hover,.link:link,.link:visited{transition:color .15s ease-in}.link:focus{outline:1px dotted currentColor}
+
+.dim{opacity:1}.dim,.dim:focus,.dim:hover{transition:opacity .15s ease-in}.dim:focus,.dim:hover{opacity:.5}.dim:active{opacity:.8;transition:opacity .15s ease-out}
+
+.ph3{padding-left:1rem;padding-right:1rem}
+
+.pv2{padding-top:.5rem;padding-bottom:.5rem}
+
+.mb2{margin-bottom:.5rem}
+
+.dib{display:inline-block}
+
+.white{color:#fff}
+
+.bg-blue{background-color:#367eb8}
