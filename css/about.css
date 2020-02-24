@@ -11,6 +11,8 @@ a:hover {
   opacity:.8;transition:opacity .15s ease-out
 }
 
+.image{ min-height: 100vh}
+
 .bg-image {
   background-image: url('https://christinabejjani.github.io/files/ChristinaBejjani.png');
   background-size: cover;
