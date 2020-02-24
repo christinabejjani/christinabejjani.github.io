@@ -117,13 +117,13 @@ a.svg {
 
 .nav-pills .nav-link:hover {
     cursor: pointer;
-    background-color: #5ab4fd;
+    background-color: #b4ccdf;
 }
 
 .nav-pills .nav-link.active:hover,
 .nav-pills .show > .nav-link:hover {
     color: white;
-    background-color: #5ab4fd;
+    background-color: #b4ccdf;
 }
 
 body{height:auto}
