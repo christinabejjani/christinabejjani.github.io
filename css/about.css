@@ -110,4 +110,27 @@ a.svg {
 
 .bg-blue{background-color:#367eb8}
 
+.nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
+    color: white;
+    background-color: #367eb8;
+}
+
+.nav-pills .nav-link {
+    text-decoration: none;
+    border-radius: 0;
+    color: #367eb8
+}
+
+.nav-pills .nav-link:hover {
+    cursor: pointer;
+    background-color: #a29668;
+}
+
+.nav-pills .nav-link.active:hover,
+.nav-pills .show > .nav-link:hover {
+    color: white;
+    background-color: #a29668;
+}
+
 body{height:auto}
