@@ -14,13 +14,12 @@
 	
     <title>Christina Bejjani</title>
 
-    <!-- Bootstrap core CSS -->
+    <!-- Bootstrap core CSS + font awesome JS just for the nav bar collapsible icon-->
     <link href="css/bootstrap.min.css" rel="stylesheet">
+	<script src="https://kit.fontawesome.com/25e7f7a6fa.js" crossorigin="anonymous"></script>
 	
 	<!-- Custom CSS -->
 	<link href="css/about.css" rel="stylesheet">
-	
-	<script src="https://kit.fontawesome.com/25e7f7a6fa.js" crossorigin="anonymous"></script>
 
 	<!-- Loading fonts -->
     <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Bebas+Neue|Cinzel|Lato|Merriweather|Noto+Sans|Open+Sans|Playfair+Display+SC|Poiret+One|Prata|Raleway|Roboto|Roboto+Condensed|Sarabun|Tinos|Vidaloka&display=swap" rel="stylesheet">
@@ -28,11 +27,13 @@
 
 <body>
 		<div class="container-fluid"><!--Containers provide a means to center and horizontally pad your site’s contents. Use .container for a responsive pixel width or .container-fluid for width: 100% across all viewport and device sizes.-->
-		  <div class="row no-gutter"><!--makes image show-->
-			<div class="d-none d-md-flex col-md-4 col-lg-6 bg-image image"></div> <!--makes image show-->
-			<div class="col-md-8 col-lg-6"> <!-- unclear what this does -->
+		  <div class="row no-gutter"><!--Rows are wrappers for columns. Each column has horizontal padding (called a gutter) for controlling the space between them. Here, get rid of the space between columns-->
+			<div class="d-none d-md-flex col-md-4 col-lg-6 bg-image image"></div> <!--d-none means display none (hidden on most devices), but flex ... col-md-4 indicates max container width of 720px, with 4 of them; col-lg-6 indicates max width of 960 px, with 6 of them; bg-image and image are special cs classes telling the background image to "cover" (fill size) and load at 100% vertical height-->
+			<div class="col-md-8 col-lg-6"> <!-- col-md-8 indicates 8 columns of < 720 px, col-lg-6 indicates < 960 px-->
+			<!--put nav bar here to ensure that it stays within the format of the half page-->
 				<nav class="navbar-nav navbar-expand-lg" role = "navigation">
-					<div class="container-fluid" style="font-family: Playfair Display SC">						
+					<div class="container-fluid" style="font-family: Playfair Display SC">
+						<!-- This is the button that appears indicating ...-->
 						  <div class="navbar-header d-sm-block d-md-block d-lg-none d-xl-none">
 							  <button type = "button" class = "navbar-toggle" data-toggle = "collapse" data-target = "#navbar-collapse" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
 								 <span class="navbar-toggler-icon">
@@ -40,7 +41,7 @@
 								 </span>
 							  </button>
 						   </div>
-						
+						<!--Note that ID on this collapse navbar-collapse class MUST match the data-target for the button above-->
 						<div class="collapse navbar-collapse" id="navbar-collapse">
 						<ul class="navbar-nav ml-auto nav-pills" role="navigation">
 							<li role="presentation" class="nav-item">
