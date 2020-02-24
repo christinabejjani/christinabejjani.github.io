@@ -25,6 +25,17 @@
 
 <body>
 		<!-- Navigation -->
+		
+		<ul class="nav nav-pills">
+  ...
+  
+
+    <ul class="dropdown-menu">
+      ...
+    </ul>
+  </li>
+  ...
+</ul>
 				<nav class="navbar navbar-expand-lg ml-auto flex-end">
 				<div class="container">
 					<a class="navbar-brand d-none d-md-block name" style="margin-bottom: 0; font-family: Playfair Display SC">Christina Bejjani</a>
@@ -42,15 +53,16 @@
 							</a>
 						</li>
 						<div class="dropdown">
-							<button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-								Research
-								<span class="caret"></span>
-							</button>
+							<li role="presentation" class="dropdown">
+							<a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+							  Research <span class="caret"></span>
+							</a>
 							<ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
 								<li class="dropdown-header">Research</li>
 								<li><a href="research.html">Summary</a></li>
 								<li><a href="publications.html">Publications</a></li>
 							</ul>
+							</li>
 						</div>
 						<div class="dropdown">
 							<button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
