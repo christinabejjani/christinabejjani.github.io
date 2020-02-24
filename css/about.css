@@ -8,7 +8,7 @@ a {
 }
 
 a:hover {
-  color: #a29668;
+  opacity:.8;transition:opacity .15s ease-out
 }
 
 .bg-image {
@@ -117,13 +117,13 @@ a.svg {
 
 .nav-pills .nav-link:hover {
     cursor: pointer;
-    background-color: #a29668;
+    background-color: #5ab4fd;
 }
 
 .nav-pills .nav-link.active:hover,
 .nav-pills .show > .nav-link:hover {
     color: white;
-    background-color: #a29668;
+    background-color: #5ab4fd;
 }
 
 body{height:auto}
