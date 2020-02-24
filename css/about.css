@@ -49,18 +49,61 @@ a:hover {
   text-decoration: none;
 }
 
-.fa {
-  padding: 20px;
-  font-size: 30px;
-  width: 30px;
-  text-align: center;
-  text-decoration: none;
-  border-radius: 50%;
-  background: #ffffff;
-  color: white;
+.svg-icon {
+    display: inline-flex;
+    align-self: center;
 }
 
-/* Add a hover effect if you want */
-.fa:hover {
-  opacity: 0.7;
+.svg-icon svg {
+    height: 1em;
+    width: 1em;
+}
+
+.svg-icon.svg-baseline svg {
+    top: .125em;
+    position: relative;
+}
+
+.icon {
+    fill: #353b48;
+    width: 48px;
+    height: 40px;
+    padding: 4px 10px 4px 10px;
+}
+
+.icon:hover {
+    fill: white;
+}
+
+a.svg {
+    position: relative;
+    display: block;
+}
+
+.icon-scholar:hover {
+    background-color: #357DF3;
+}
+
+.icon-rg:hover {
+    background-color: #00CCBB;
+}
+
+.icon-osf:hover {
+    background-color: #38B9EB;
+}
+
+.icon-github:hover {
+    background-color: #bd2c00;
+}
+
+.icon-orcid:hover {
+    background-color: #A6CE39;
+}
+
+.icon-twitter:hover {
+    background-color: #1DA1F2;
+}
+
+.icon-up:hover {
+    fill: #353b48;
 }
