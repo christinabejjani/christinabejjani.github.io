@@ -17,7 +17,6 @@ a:hover {
   background-image: url('https://christinabejjani.github.io/files/ChristinaBejjani.png');
   background-size: cover;
   background-position: center;
-  object-fit: cover;
 }
 
 .svg-icon {
