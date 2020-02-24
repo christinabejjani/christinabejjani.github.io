@@ -11,15 +11,11 @@ a:hover {
   color: #a29668;
 }
 
-.about,
-.image {
-  min-height: 100vh;
-}
-
 .bg-image {
   background-image: url('https://christinabejjani.github.io/files/ChristinaBejjani.png');
   background-size: cover;
   background-position: center;
+  object-fit: cover;
 }
 
 .svg-icon {
