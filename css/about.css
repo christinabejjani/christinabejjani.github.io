@@ -8,7 +8,7 @@
 }
 
 .bg-image {
-  background-image: url('https://christinabejjani.github.io/files/ChristinaBejjani.png');
+  background-image: url('https://christinabejjani.github.io/files/ChristinaBejjani.png') no-repeat center center fixed;
   background-size: cover;
   background-position: center;
 }
