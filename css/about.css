@@ -85,7 +85,7 @@ a.svg {
     background-color: #1DA1F2;
 }
 
-.bttn {width: 200px; text-align: center}
+.bttn {width: 200px; text-align: center; border-radius: 4px; border: none; outline:none}
 
 .b-right {margin-left: auto}
 
