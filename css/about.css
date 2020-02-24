@@ -8,7 +8,7 @@ a {
 }
 
 a:hover {
-  opacity:.5;
+  color: #ee5253;
 }
 
 .image{ min-height: 100vh}
