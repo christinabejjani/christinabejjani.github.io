@@ -8,7 +8,7 @@ a {
 }
 
 a:hover {
-  opacity:.8;transition:opacity .15s ease-out
+  opacity:.5;
 }
 
 .image{ min-height: 100vh}
