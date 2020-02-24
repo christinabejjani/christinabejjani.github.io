@@ -25,27 +25,6 @@ a:hover {
   background-position: center;
 }
 
-.back-to-top {
-  position: fixed;
-  bottom: 2em;
-  right: 50px;
-  text-decoration: none;
-  color: #367eb8;
-  background-color: white;
-  border-top: 2px solid #367eb8;
-  border-bottom: 2px solid #367eb8;
-  border-right: 2px solid #367eb8;
-  border-left: 2px solid #367eb8;
-  font-size: 30px;
-  padding: 1em;
-  display: none;
-}
-
-.back-to-top:hover {
-  background-color: white;
-  text-decoration: none;
-}
-
 .svg-icon {
     display: inline-flex;
     align-self: center;
@@ -113,9 +92,9 @@ a.svg {
 
 .b-right {margin-left: auto}
 
-.f6{font-size:.875rem}
+.f6 {font-size:.875rem}
 
-.link{text-decoration:none}.link,.link:active,.link:focus,.link:hover,.link:link,.link:visited{transition:color .15s ease-in}.link:focus{outline:1px dotted currentColor}
+.link {text-decoration:none}.link,.link:active,.link:focus,.link:hover,.link:link,.link:visited{transition:color .15s ease-in}.link:focus{outline:1px dotted currentColor}
 
 .dim{opacity:1}.dim,.dim:focus,.dim:hover{transition:opacity .15s ease-in}.dim:focus,.dim:hover{opacity:.5}.dim:active{opacity:.8;transition:opacity .15s ease-out}
 
@@ -130,3 +109,5 @@ a.svg {
 .white{color:#fff}
 
 .bg-blue{background-color:#367eb8}
+
+body{height:auto}
