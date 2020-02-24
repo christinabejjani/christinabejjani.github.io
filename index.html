@@ -43,13 +43,22 @@
 			<div class="col-md-8 col-lg-6"> <!-- unclear what this does -->
 			  <div class="about d-flex align-items-center py-5"> <!--makes image show--->
 				<div class="container">
-				
-					<div>
-					<h1 class="d-none d-md-block name" style="margin-bottom: 0; font-family: Playfair Display SC">Christina Bejjani</h1>
-					<h1 class="d-md-none" style="margin-bottom: 0; font-family: Playfair Display SC">C. Bejjani</h1>
+
+
+				<!-- Navigation -->
+				<nav class="navbar navbar-expand-lg navbar-light bg-light static-top mb-5 shadow">
+				<div class="container">
+					<a class="navbar-brand d-none d-md-block name" style="margin-bottom: 0; font-family: Playfair Display SC">Christina Bejjani</h1>
+					<a class="navbar-brand d-md-none" style="margin-bottom: 0; font-family: Playfair Display SC">C. Bejjani</h1>
 
 					<p><em>PhD candidate at Duke University </em></p>
-					<ul class="nav nav-pills flex-column flex-sm-row" role="navigation">
+					
+					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+					  <span class="navbar-toggler-icon"></span>
+					</button>
+					
+					<div class="collapse navbar-collapse" id="navbarResponsive">
+					<ul class="navbar-nav nav-pills flex-column flex-sm-row ml-auto" role="navigation">
 						<li class="nav-item">
 							<a class="nav-link active" href="index.html">about</a>
 						</li>
@@ -76,7 +85,9 @@
 						</li>
 					</ul>
 					<hr>
+					</div>
 				</div>
+				</nav>
 				
 					<div class="col-md-9 col-lg-8 mx-auto"> <!-- mx refers to spacing, making the inline-wrapping css work (flex-wrap moves it to the left), lg-8 refers to greater than 992px, md refers to greater than 778 px-->
 						<div>
@@ -104,9 +115,9 @@
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <script src="js/bootstrap.bundle.min.js"></script>
-    <script src="js/jquery.slim.js"></script>
-    <script src="https://unpkg.com/@popperjs/core@2"></script>
+    <script src="js/bootstrap.bundle.min.js" type="text/javascript"></script>
+    <script src="js/jquery.slim.js" type="text/javascript"></script>
+    <script src="https://unpkg.com/@popperjs/core@2" type="text/javascript"></script>
 </body>
 
 </html>
