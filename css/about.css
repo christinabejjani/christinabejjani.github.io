@@ -14,7 +14,10 @@ a:hover {
 .image{ min-height: 100vh}
 
 .bg-image {
-  background-image: url('https://christinabejjani.github.io/files/ChristinaBejjani.png');
+  background-image: url('https://christinabejjani.github.io/files/ChristinaBejjani.png'); no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
   background-size: cover;
   background-position: center;
 }
