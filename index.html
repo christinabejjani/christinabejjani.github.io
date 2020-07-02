@@ -28,6 +28,7 @@
 <body>
 		<div class="container-fluid"><!--Containers provide a means to center and horizontally pad your site’s contents. Use .container for a responsive pixel width or .container-fluid for width: 100% across all viewport and device sizes.-->
 		  <div class="row no-gutter"><!--Rows are wrappers for columns. Each column has horizontal padding (called a gutter) for controlling the space between them. Here, get rid of the space between columns-->
+			
 			<div class="d-none d-md-flex col-md-4 col-lg-6 bg-image image"></div> <!--d-none means display none (hidden on most devices), but flex ... col-md-4 indicates max container width of 720px, with 4 of them; col-lg-6 indicates max width of 960 px, with 6 of them; bg-image and image are special cs classes telling the background image to "cover" (fill size) and load at 100% vertical height-->
 			<div class="col-md-8 col-lg-6"> <!-- col-md-8 indicates 8 columns of < 720 px, col-lg-6 indicates < 960 px-->
 			<!--put nav bar here to ensure that it stays within the format of the half page-->
@@ -118,7 +119,6 @@
 					</div>
 				</nav>
 			  <div class="about d-flex align-items-center py-5">
-				<div class="container">
 					<div class="col-md-9 col-lg-8 mx-auto"> <!-- mx refers to spacing, making the inline-wrapping css work (flex-wrap moves it to the left), lg-8 refers to greater than 992px, md refers to greater than 778 px-->
 						<h1 class="d-sm-none d-md-block display-4" style="font-family: Playfair Display SC">Christina Bejjani</h1><!--Hidden only on sm--->
 						<h1 class="d-none d-sm-block d-md-none display-4" style="font-family: Playfair Display SC">C. Bejjani</h1> <!--Visible only on sm--->
@@ -193,7 +193,6 @@
 						</div>
 					</div>
 				</div>
-			  </div>
 			</div>
 		  </div>
 		</div>
