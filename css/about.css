@@ -8,6 +8,11 @@ a:hover {
   color: #ee5253;
 }
 
+.border-line {
+  border-left: .5rem solid b4ccdf;
+  min-height: 100vh;
+}
+
 .image{ min-height: 100vh}
 
 .bg-image {
