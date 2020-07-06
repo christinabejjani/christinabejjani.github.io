@@ -36,7 +36,7 @@
 				<nav class="navbar-nav navbar-expand-lg" role = "navigation">
 					<div class="container-fluid" style="font-family: Playfair Display SC">
 						<!-- This is the button that appears indicating ...-->
-						  <div class="navbar-header d-sm-block d-md-block d-lg-block d-xl-none">
+						  <div class="navbar-header d-none d-sm-block d-md-block d-lg-none">
 							  <button type = "button" class = "navbar-toggle" data-toggle = "collapse" data-target = "#navbar-collapse" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
 								 <span class="navbar-toggler-icon">
 									<i class="fas fa-bars" style="color: #367eb8"></i>
@@ -44,7 +44,7 @@
 							  </button>
 						   </div>
 						<!--Note that ID on this collapse navbar-collapse class MUST match the data-target for the button above-->
-						<div class="collapse navbar-collapse d-none d-xl-block" id="navbar-collapse">
+						<div class="collapse navbar-collapse" id="navbar-collapse">
 						<ul class="navbar-nav ml-auto nav-pills" role="navigation">
 							<li role="presentation" class="nav-item">
 								<a class="nav-link active" href="index.html">About  <span class="sr-only">(current)</span></a>
@@ -114,10 +114,10 @@
 						</div>
 					</div>
 				</nav>
-			  <div class="about d-flex align-items-center py-5">
+			  <div class="d-flex align-items-center py-5">
 					<div class="col-md-9 col-lg-8 mx-auto"> <!-- mx refers to spacing, making the inline-wrapping css work (flex-wrap moves it to the left), lg-8 refers to greater than 992px, md refers to greater than 778 px-->
-						<h1 class="d-sm-none d-md-block display-4" style="font-family: Playfair Display SC">Christina Bejjani</h1><!--Hidden only on sm--->
-						<h1 class="d-none d-sm-block d-md-none display-4" style="font-family: Playfair Display SC">C. Bejjani</h1> <!--Visible only on sm--->
+						<h1 class="d-none d-sm-none d-md-block display-4" style="font-family: Playfair Display SC">Christina Bejjani</h1><!--Hidden only on sm--->
+						<h1 class="d-sm-block d-md-none display-4" style="font-family: Playfair Display SC">C. Bejjani</h1> <!--Visible only on sm--->
 						<h4 class="display-6" style="font-family: Open Sans"><em>PhD candidate at Duke University </em></h4>
 						<div style="font-family: Open Sans">
 						<div class="row justify-content-start" style="padding: 15px">
