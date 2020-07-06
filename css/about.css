@@ -9,7 +9,8 @@ a:hover {
 }
 
 .border-line {
-  border-left: .5rem solid b4ccdf;
+  border-left: 1em; 
+  color: b4ccdf;
   min-height: 100vh;
 }
 
