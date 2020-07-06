@@ -16,7 +16,7 @@ a:hover {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  background-position: relative;
+  background-position: center;
 }
 
 .svg-icon {
