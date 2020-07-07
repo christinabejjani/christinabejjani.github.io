@@ -127,6 +127,7 @@ a.svg {
 .dropdown-menu{
   position: absolute;
   display: none;
+  margin-top: 0;
   background-color: #b4ccdf;
 }
 
@@ -144,6 +145,10 @@ a.svg {
 
 .topnav .nav-link.active {
   border-bottom: 0.2em solid #367eb8;
+}
+
+.navbar .dropdown-toggle {
+		margin-bottom: 0;
 }
 
 .nav-link-child {
