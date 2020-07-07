@@ -181,3 +181,6 @@ a.svg {
 }
 
 .dropdown:hover .dropdown-menu {display: block;}
+
+.nav-pad{padding-top:2rem!important}
+.nav-pad{padding-bottom:4rem!important}
