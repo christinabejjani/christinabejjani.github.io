@@ -110,6 +110,11 @@ a.svg {
 
 .bg-blue{background-color:#367eb8}
 
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
 .dropdown-toggle {
   background-color: transparent;
   border-color: #fff;
@@ -117,11 +122,11 @@ a.svg {
   border-top: none;
   border-right: none;
   border-left: none;
-  display: block;
 }
 
 .dropdown-menu{
-  position: relative;
+  position: absolute;
+  display: none;
   background-color: #b4ccdf;
 }
 
