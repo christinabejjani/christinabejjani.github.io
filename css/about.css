@@ -110,29 +110,6 @@ a.svg {
 
 .bg-blue{background-color:#367eb8}
 
-.nav-pills .nav-link.active,
-.nav-pills .show > .nav-link {
-    color: white;
-    background-color: #367eb8;
-}
-
-.nav-pills .nav-link {
-    text-decoration: none;
-    border-radius: 0;
-    color: #367eb8
-}
-
-.nav-pills .nav-link:hover {
-    cursor: pointer;
-    background-color: #b4ccdf;
-}
-
-.nav-pills .nav-link.active:hover,
-.nav-pills .show > .nav-link:hover {
-    color: white;
-    background-color: #b4ccdf;
-}
-
 .dropdown-toggle {
   background-color: transparent;
   border-color: #fff;
@@ -144,4 +121,17 @@ a.svg {
 
 .dropdown-menu{
   background-color: #b4ccdf;
+}
+
+.topnav .nav-link {
+  text-decoration: none;
+  border-bottom: 0.2em solid transparent;
+}
+
+.topnav .nav-link:hover {
+  border-bottom: 0.2em solid #367eb8;
+}
+
+.topnav .nav-link.active {
+  border-bottom: 0.2em solid #367eb8;
 }
