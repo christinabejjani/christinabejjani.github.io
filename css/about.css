@@ -135,3 +135,8 @@ a.svg {
 .topnav .nav-link.active {
   border-bottom: 0.2em solid #367eb8;
 }
+
+/*.topnav .nav-link.active,
+.topnav .show > .nav-link {
+    border-bottom: 0.2em solid #367eb8;
+} this is here if I want to make the underline continue to show*/
