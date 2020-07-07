@@ -88,7 +88,7 @@ a.svg {
     background-color: #1DA1F2;
 }
 
-.bttn {width: 12em; text-align: center; border-radius: 4px; border: none; outline:none}
+.bttn {width: 12em; text-align: center; border-radius: 2px; border: none; outline:none}
 
 .link {text-decoration:none}
 .link,.link:active,.link:focus,.link:hover,.link:link,.link:visited{transition:color .15s ease-in}
@@ -104,31 +104,6 @@ a.svg {
 .white{color:#fff}
 
 .bg-blue{background-color:#367eb8}
-
-.applied-menu{
-  right: 50%;
-  left: -50%;
-}
-
-.mentoring-menu{
-  left: -20%;
-}
-
-.other-menu{
-  left: -25%; 
-}
-
-.dropdown-menu{
-  display: none;
-  top: 3.5em;
-  margin-top: 0;
-  background-color: #b4ccdf;
-  -webkit-border-radius: 0 !important; /* creates the square dropdwon*/
-     -moz-border-radius: 0 !important;
-          border-radius: 0 !important;
-}
-
-.dropdown:hover .dropdown-menu {display: block;}
 
 .topnav .nav-link {
   text-decoration: none;
@@ -160,7 +135,7 @@ a.svg {
 .dropdown-menu-arrow {
   top: -25px;
   right: auto;
-  left: 50%;
+  left: 50%; /*when I put text-align: center, must comment this out*/
   position: relative;
   -webkit-transform: translate(-50%, 0);
   -o-transform: translate(-50%, 0);
@@ -180,3 +155,29 @@ a.svg {
   right: -8px;
   border-bottom-color: #b4ccdf;
 }
+
+.applied-menu{
+  right: 50%;
+  left: -50%;
+}
+
+.mentoring-menu{
+  left: -20%;
+}
+
+.other-menu{
+  left: -25%; 
+}
+
+.dropdown-menu{
+  display: none;
+  top: 3.5em;
+  margin-top: 0;
+/*  text-align: center; */
+  background-color: #b4ccdf;
+  -webkit-border-radius: 0 !important; /* creates the square dropdwon*/
+     -moz-border-radius: 0 !important;
+          border-radius: 0 !important;
+}
+
+.dropdown:hover .dropdown-menu {display: block;}
