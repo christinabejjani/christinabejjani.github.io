@@ -110,6 +110,19 @@ a.svg {
 
 .bg-blue{background-color:#367eb8}
 
+.applied-menu{
+  right: 50%;
+  left: -50%;
+}
+
+.mentoring-menu{
+  left: -20%;
+}
+
+.other-menu{
+  left: -25%; 
+}
+
 .dropdown-menu{
   display: none;
   top: 3.5em;
