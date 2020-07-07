@@ -88,23 +88,18 @@ a.svg {
     background-color: #1DA1F2;
 }
 
-.bttn {width: 200px; text-align: center; border-radius: 4px; border: none; outline:none}
+.bttn {width: 12em; text-align: center; border-radius: 4px; border: none; outline:none}
 
-.b-right {margin-left: auto}
+.link {text-decoration:none}
+.link,.link:active,.link:focus,.link:hover,.link:link,.link:visited{transition:color .15s ease-in}
+.link:focus{outline:1px dotted currentColor}
 
-.f6 {font-size:.875rem}
-
-.link {text-decoration:none}.link,.link:active,.link:focus,.link:hover,.link:link,.link:visited{transition:color .15s ease-in}.link:focus{outline:1px dotted currentColor}
-
-.dim{opacity:1}.dim,.dim:focus,.dim:hover{transition:opacity .15s ease-in}.dim:focus,.dim:hover{opacity:.5}.dim:active{opacity:.8;transition:opacity .15s ease-out}
-
-.ph3{padding-left:1rem;padding-right:1rem}
+.dim,{opacity:1}
+.dim,.dim:focus,.dim:hover{transition:opacity .15s ease-in}
+.dim:focus,.dim:hover{opacity:.5}
+.dim:active,.dim:visited{opacity:.8;transition:opacity .15s ease-out}
 
 .pv2{padding-top:.5rem;padding-bottom:.5rem}
-
-.mb2{margin-bottom:.5rem}
-
-.dib{display:inline-block}
 
 .white{color:#fff}
 
