@@ -137,6 +137,10 @@ a.svg {
   border-bottom: 0.2em solid #367eb8;
 }
 
+.nav-link-child {
+  color: #065B9E;
+}
+
 /*.topnav .nav-link.active,
 .topnav .show > .nav-link {
     border-bottom: 0.2em solid #367eb8;
