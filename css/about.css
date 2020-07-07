@@ -120,8 +120,11 @@ a.svg {
 }
 
 .dropdown-menu{
+  position: relative;
   background-color: #b4ccdf;
 }
+
+.dropdown:hover .dropdown-menu {display: block;}
 
 .topnav .nav-link {
   text-decoration: none;
