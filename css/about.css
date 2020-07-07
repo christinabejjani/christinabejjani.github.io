@@ -117,6 +117,7 @@ a.svg {
   border-top: none;
   border-right: none;
   border-left: none;
+  display: block;
 }
 
 .dropdown-menu{
