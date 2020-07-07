@@ -189,6 +189,13 @@
 	$("#dyn-bttn").click(function(){
    	    window.open('https://drive.google.com/file/d/1Y6cO0rxWH-vK7CoJ4QmeVlPCPLocUc-w/view?usp=sharing','_blank');
     });
+	
+		$(".dropdown").hover(function(){
+		var dropdownMenu = $(this).children(".dropdown-menu");
+		if(dropdownMenu.is(":visible")){
+			dropdownMenu.parent().toggleClass("open");
+		}
+	});
 
 	});
 	</script>
