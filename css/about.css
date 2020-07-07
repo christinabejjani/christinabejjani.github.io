@@ -145,11 +145,3 @@ a.svg {
 .dropdown-menu{
   background-color: #b4ccdf;
 }
-
-.dropdown-toggle[aria-expanded="true"] .caret{
-  transform:rotate(180deg);
-  transition:all ease 0.5s;
-}
-.dropdown-toggle .caret{
-  transition:all ease 0.5s;
-}
