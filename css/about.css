@@ -117,7 +117,7 @@ a.svg {
 
 .dropdown-toggle {
   background-color: transparent;
-  border-color: #fff;
+  border-color: transparent;
   border-style: solid;
   border-top: none;
   border-right: none;
@@ -132,6 +132,13 @@ a.svg {
 }
 
 .dropdown:hover .dropdown-menu {display: block;}
+
+.dropdown-menu-center {
+right: auto;
+left: 50%;
+-webkit-transform: translate(-50%, 0);
+-o-transform: translate(-50%, 0);
+transform: translate(-50%, 0);}
 
 .topnav .nav-link {
   text-decoration: none;
@@ -159,3 +166,34 @@ a.svg {
 .topnav .show > .nav-link {
     border-bottom: 0.2em solid #367eb8;
 } this is here if I want to make the underline continue to show*/
+
+.dropdown-menu-arrow {
+  top: -25px;
+  left: 30%;
+  width: 1em;
+  height: 0;
+  position: relative;
+}
+.dropdown-menu-arrow:before,
+.dropdown-menu-arrow:after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 0;
+  height: 0;
+  border-width: 10px 11px;
+  border-style: solid;
+  border-color: transparent;
+  z-index: 100;
+}
+.dropdown-menu-arrow:after {
+  bottom: -18px;
+  right: -8px;
+  border-bottom-color: #b4ccdf;
+}
+.dropdown-menu-arrow:before {
+  bottom: -17px;
+  right: -8px;
+  border-bottom-color: #b4ccdf;
+}
+
