@@ -98,6 +98,7 @@ a.svg {
 .white{color:#fff}
 
 .bg-blue{background-color:#367eb8}
+.bg-green{background-color:#36B870} /*complementary green to the pink which forms the triad with the blue*/
 
 .topnav .nav-link {
   text-decoration: none;
