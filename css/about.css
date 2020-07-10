@@ -5,13 +5,7 @@
 }
 
 .copy-link:hover {
-  color: #ee5253;
-}
-
-.border-line {
-  border-left: 1em; 
-  color: b4ccdf;
-  min-height: 100vh;
+  color: #B8367E;
 }
 
 .image{ min-height: 100vh}
