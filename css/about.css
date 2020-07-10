@@ -118,8 +118,8 @@ a.svg {
   margin-bottom: 0;
 }
 
-.nav-link-child {
-  color: #065B9E;
+.nav-link-child, .nav-link-child:hover {
+  color: white;
 }
 
 /*.topnav .nav-link.active,
@@ -148,7 +148,7 @@ a.svg {
   z-index: 1001;
   bottom: -18px;
   right: -8px;
-  border-bottom-color: #b4ccdf;
+  border-bottom-color: #367eb8;
 }
 
 .applied-menu{
@@ -169,7 +169,7 @@ a.svg {
   top: 3.5em;
   margin-top: 0;
 /*  text-align: center; */
-  background-color: #b4ccdf;
+  background-color: #367eb8;
   -webkit-border-radius: 0 !important; /* creates the square dropdwon*/
      -moz-border-radius: 0 !important;
           border-radius: 0 !important;
