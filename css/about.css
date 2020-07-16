@@ -1,11 +1,12 @@
 
-.copy-link {
+.copy-link, .copy-link:link {
   color: #367eb8;
   text-decoration: none;
 }
 
-.copy-link:hover {
+.copy-link:hover, .copy-link:active, .copy-link:focus, copy-link:visited {
   color: #B8367E;
+  transition:color .15s ease-in
 }
 
 .image{ min-height: 100vh}
@@ -83,10 +84,6 @@ a.svg {
 }
 
 .bttn {width: 12em; text-align: center; border-radius: 2px; border: none; outline:none}
-
-.link {text-decoration:none}
-.link,.link:active,.link:focus,.link:hover,.link:link,.link:visited{transition:color .15s ease-in}
-.link:focus{outline:1px dotted currentColor}
 
 .dim,{opacity:1}
 .dim,.dim:focus,.dim:hover{transition:opacity .15s ease-in}
