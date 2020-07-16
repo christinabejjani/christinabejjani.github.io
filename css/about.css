@@ -4,7 +4,7 @@
   text-decoration: none;
 }
 
-.copy-link:hover, .copy-link:active, .copy-link:focus, copy-link:visited {
+.copy-link:hover, .copy-link:active, .copy-link:focus, .copy-link:visited {
   color: #B8367E;
   transition:color .15s ease-in
 }
