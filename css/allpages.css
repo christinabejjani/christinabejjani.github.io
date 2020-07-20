@@ -1,0 +1,89 @@
+.copy-link, .copy-link:link {
+  color: #367eb8;
+  text-decoration: none;
+}
+
+.copy-link:hover, .copy-link:active, .copy-link:focus, .copy-link:visited {
+  color: #B8367E;
+  transition:color .15s ease-in
+}
+
+.topnav .nav-link {
+  text-decoration: none;
+  color: #367eb8;
+  border-bottom: 0.2em solid transparent;
+}
+
+.topnav .nav-link:hover {
+  border-bottom: 0.2em solid #367eb8;
+}
+
+.topnav .nav-link.active {
+  border-bottom: 0.2em solid #367eb8;
+}
+
+.navbar .dropdown-toggle {
+  margin-bottom: 0;
+}
+
+.nav-link-child, .nav-link-child:hover {
+  color: white;
+}
+
+/*.topnav .nav-link.active,
+.topnav .show > .nav-link {
+    border-bottom: 0.2em solid #367eb8;
+} this is here if I want to make the underline continue to show*/
+
+.dropdown-menu-arrow {
+  top: -25px;
+  right: auto;
+  left: 50%; /*when I put text-align: center, must comment this out*/
+  position: relative;
+  -webkit-transform: translate(-50%, 0);
+  -o-transform: translate(-50%, 0);
+  transform: translate(-50%, 0);
+}
+
+.dropdown-menu-arrow:before,
+.dropdown-menu-arrow:after {
+  content: "";
+  position: absolute;
+  display: block;
+  border-width: 10px 11px;
+  border-style: solid;
+  border-color: transparent;
+  z-index: 1001;
+  bottom: -18px;
+  right: -8px;
+  border-bottom-color: #367eb8;
+}
+
+.applied-menu{
+  right: 50%;
+  left: -50%;
+}
+
+.mentoring-menu{
+  left: -20%;
+}
+
+.other-menu{
+  left: -25%; 
+}
+
+.dropdown-menu{
+  display: none;
+  top: 3.5em;
+  margin-top: 0;
+/*  text-align: center; */
+  background-color: #367eb8;
+  -webkit-border-radius: 0 !important; /* creates the square dropdwon*/
+     -moz-border-radius: 0 !important;
+          border-radius: 0 !important;
+}
+
+.dropdown:hover .dropdown-menu {display: block;}
+
+.nav-pad{padding-top:2rem!important}
+.nav-pad{padding-bottom:4rem!important}
