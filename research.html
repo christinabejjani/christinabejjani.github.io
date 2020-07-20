@@ -9,68 +9,108 @@
     <meta name="description" content="Personal website for Christina Bejjani">
     <meta name="keywords" content="Psychology, Learning, Memory, Attention, Christina Bejjani, C. Bejjani">
     <meta name="author" content="Christina Bejjani"> -->
-
+	
     <link href="files/favi_icon_website2.png" rel="icon" type="image/x-icon" />
 	
     <title>Christina Bejjani</title>
 
-    <!-- Bootstrap core CSS -->
+    <!-- Bootstrap core CSS + font awesome JS just for the nav bar collapsible icon-->
     <link href="css/bootstrap.min.css" rel="stylesheet">
+	<script src="https://kit.fontawesome.com/25e7f7a6fa.js" crossorigin="anonymous"></script>
+	
+	<!-- Custom CSS -->
+	<link href="css/about.css" rel="stylesheet">
+	<link href="css/allpages.css" rel="stylesheet">
 
+	<!-- Loading fonts -->
     <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Bebas+Neue|Cinzel|Lato|Merriweather|Noto+Sans|Open+Sans|Playfair+Display+SC|Poiret+One|Prata|Raleway|Roboto|Roboto+Condensed|Sarabun|Tinos|Vidaloka&display=swap" rel="stylesheet">
 </head>
 
 <body>
-<!--
-	<div class="mobile-btn header-btn pull-right hidden-xs">
-	<a href="#" title="Smartphone View" class="icon-mobile-phone"></a>
-	</div>
-
-	<div class="tablet-btn header-btn pull-right hidden-xs">
-	<a href="#" title="Tablet View" class="icon-tablet"></a>
-	</div>
-
-	<div class="desktop-btn header-btn pull-right hidden-xs">
-	<a href="#" title="Desktop View" class="icon-desktop"></a>
-	</div>
--->
-    <main role="main" class="container">
-        <div>
-            <h1 class="d-none d-md-block name" style="margin-bottom: 0; font-family: Playfair Display SC">Christina Bejjani</h1>
-            <h1 class="d-md-none" style="margin-bottom: 0; font-family: Playfair Display SC">C. Bejjani</h1>
-
-            <p><em>PhD candidate at Duke University </em></p>
-            <ul class="nav nav-pills flex-column flex-sm-row" role="navigation">
-                <li class="nav-item">
-                    <a class="nav-link active" href="index.html">about</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="research.html">research</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="publications.html">publications</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="teaching.html">teaching</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="diversity.html">diversity</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="mentoring.html">mentoring</a>
-                </li>
-		<li class="nav-item">
-                    <a class="nav-link" href="contact.html">contact</a>
-                </li>
-		<li class="nav-item">
-                    <a class="nav-link" href="/files/BejjaniCV.pdf" target="_blank">cv [pdf]</a>
-                </li>
-            </ul>
-            <hr>
-        </div>
-
-        <div>
-		
+		<div class="container-fluid"><!--Containers provide a means to center and horizontally pad your site’s contents. Use .container for a responsive pixel width or .container-fluid for width: 100% across all viewport and device sizes.-->
+			<div class="row no-gutter"><!--Rows are wrappers for columns. Each column has horizontal padding (called a gutter) for controlling the space between them. Here, get rid of the space between columns-->
+			
+				<div class="d-none d-flex col-md-1"></div>
+				<div class="d-none d-xl-flex col-md-3 col-lg-4 bg-image image"></div> <!--d-none means display none (hidden on most devices), but flex ... col-md-4 indicates max container width of 720px, with 4 of them; col-lg-6 indicates max width of 960 px, with 6 of them; bg-image and image are special cs classes telling the background image to "cover" (fill size) and load at 100% vertical height-->
+				<div class="col-md-9 col-lg-9 col-xl-7"> <!-- col-md-8 indicates 8 columns of < 720 px, col-lg-6 indicates < 960 px-->
+			
+					<div class="d-flex align-items-center">
+						<div class="col-lg-9 mx-auto">
+							<nav class="navbar-nav navbar-expand-lg nav-pad" role = "navigation">
+								<div style="font-family: Playfair Display SC">
+									  <div class="navbar-header d-sm-block d-md-block d-lg-none">
+										  <button type = "button" class = "navbar-toggle" data-toggle = "collapse" data-target = "#navbar-collapse" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+											 <span class="navbar-toggler-icon">
+												<i class="fas fa-bars" style="color: #367eb8"></i>
+											 </span>
+										  </button>
+									   </div>
+										<!--Note that ID on this collapse navbar-collapse class MUST match the data-target for the button above-->
+										<div class="collapse navbar-collapse" id="navbar-collapse">
+										<ul class="navbar-nav ml-auto topnav" role="navigation">
+											<li class="nav-item">
+												<a class="nav-link active" href="index.html">About<span class="sr-only">(current)</span></a>
+											</li>
+											<div id = "researchdropdown">
+												<li class="dropdown">
+												<a class="nav-link dropdown" href="#" data-toggle="dropdown" data-hover="dropdown" role="button" aria-haspopup="true" aria-expanded="false" aria-labelledby="researchdropdown">Research</a>
+												<ul class="dropdown-menu other-menu">
+													<span class="dropdown-menu-arrow"></span>
+													<li><a href="research.html" class="nav-link-child" tabindex="-1">Summary</a></li>
+													<li><a href="publications.html" class="nav-link-child" tabindex="-1">Publications</a></li>
+												</ul>
+												</li>
+											</div>
+											<div id = "teachingdropdown">
+												<li class="dropdown">
+												<a class="nav-link dropdown" href="#" data-toggle="dropdown" data-hover="dropdown" role="button" aria-haspopup="true" aria-expanded="false" aria-labelledby="teachingdropdown">Teaching</a>
+												<ul class="dropdown-menu other-menu">
+													<span class="dropdown-menu-arrow"></span>
+													<li><a href="teaching.html" class="nav-link-child" tabindex="-1">Philosophy</a></li>
+													<li><a href="teachingportfolio.html" class="nav-link-child" tabindex="-1">Portfolio</a></li>
+												</ul>
+												</li>
+											</div>
+											<div id = "diversitydropdown">
+												<li class="dropdown">
+												<a class="nav-link dropdown" href="#" data-toggle="dropdown" data-hover="dropdown" role="button" aria-haspopup="true" aria-expanded="false" aria-labelledby="diversitydropdown">Diversity</a>
+												<ul class="dropdown-menu other-menu">
+													<span class="dropdown-menu-arrow"></span>
+													<li><a href="diversity.html" class="nav-link-child" tabindex="-1">Philosophy</a></li>
+													<li><a href="diversityresources.html" class="nav-link-child" tabindex="-1">Portfolio</a></li>
+												</ul>
+												</li>
+											</div>
+											<div id = "mentoringdropdown">
+												<li class="dropdown">
+												<a class="nav-link dropdown" href="#" data-toggle="dropdown" data-hover="dropdown" role="button" aria-haspopup="true" aria-expanded="false" aria-labelledby="mentoringdropdown">Mentoring</a>
+												<ul class="dropdown-menu mentoring-menu">
+													<span class="dropdown-menu-arrow"></span>
+													<li><a href="mentoring.html" class="nav-link-child" tabindex="-1">Philosophy</a></li>
+													<li><a href="mentoringportfolio.html" class="nav-link-child" tabindex="-1">Portfolio</a></li>
+												</ul>
+												</li>
+											</div>
+											<div id = "applieddropdown">
+												<li class="dropdown">
+												<a class="nav-link dropdown" href="#" data-toggle="dropdown" data-hover="dropdown" role="button" aria-haspopup="true" aria-expanded="false" aria-labelledby="applieddropdown">Applied</a>
+												<ul class="dropdown-menu applied-menu">
+													<span class="dropdown-menu-arrow"></span>
+													<li><a href="resume.html" class="nav-link-child" tabindex="-1">Resume</a></li>									
+													<li><a href="appliedresearch.html" class="nav-link-child" tabindex="-1">Portfolio</a></li>
+												</ul>
+												</li>
+											</div>
+										</ul>
+										<hr>
+										</div>
+									</div>
+								</nav>					<!-- mx refers to spacing, making the inline-wrapping css work (flex-wrap moves it to the left), lg-8 refers to greater than 992px, md refers to greater than 778 px-->
+							<h1 class="d-none d-sm-none d-md-block display-4" style="font-family: Playfair Display SC">Christina Bejjani</h1><!--Hidden only on sm--->
+							<h1 class="d-sm-block d-md-none display-4" style="font-family: Playfair Display SC">C. Bejjani</h1> <!--Visible only on sm--->
+							<h4 class="display-6" style="font-family: Open Sans"><em>PhD candidate at Duke University </em></h4>
+							<div style="font-family: Open Sans">
+								<div class="row justify-content-start" style="padding: 15px">
 		<p> <b>Please note that this website is currently under construction.</b></p>
 
 		<p><strong>Cognitive control</strong> describes the strategic use of a current context to flexibly modulate our responses in line with internal goals. The overarching goal of my research is to examine how memory guides cognitive control—<em>namely, how past experiences and internal goals can shape our responses to demands in our environment, particularly those that require a great deal of attention.</em></p>  
@@ -79,7 +119,7 @@
 
 		<p><strong>1. How does learning inform our understanding of cognitive control?</strong></p>
 
-		<p><dl id="attachment_743" class="wp-caption alignright" style="width:300px;"><dt class="wp-caption-dt"><img class="alignright size-medium wp-image-743" src="https://christinabejjani.files.wordpress.com/2017/12/rpjk6503-e1514687799112.jpeg?w=300" alt="Psychonomics2017" width="300" height="279" /></dt><dd class="wp-caption-dd">I earned <a href="https://www.apadivisions.org/division-3/publications/bulletin/2017/12/poster-winners" target="_blank" rel="noopener noreferrer">the 3rd place APA Division 3 Poster Award</a> at Psychonomics 2017.</dd></dl>Do our past experiences inform how we respond to situations that require a lot of attentional focus? For example, people might approach a new situation or environment with a heightened sense of attention, because similar environments have proven difficult in the past. In order for this mechanism to work, people would need to bind together a specific <em>control state</em> (e.g., heightened focus of attention) and their memory of the attentionally demanding environment. In this line of research, I examine how learned contextual cues guide strategic adjustment to attentional demands, showing that people can generalize cognitive strategies across similar contexts, and which brain regions support this type of control-learning. For example publications, see:</p>  
+		<p><img class="alignright size-medium wp-image-743" src="https://christinabejjani.files.wordpress.com/2017/12/rpjk6503-e1514687799112.jpeg?w=300" alt="Psychonomics2017" width="300" height="279" /></dt><dd class="wp-caption-dd">I earned <a href="https://www.apadivisions.org/division-3/publications/bulletin/2017/12/poster-winners" target="_blank" rel="noopener noreferrer">the 3rd place APA Division 3 Poster Award</a> at Psychonomics 2017.</dd></dl>Do our past experiences inform how we respond to situations that require a lot of attentional focus? For example, people might approach a new situation or environment with a heightened sense of attention, because similar environments have proven difficult in the past. In order for this mechanism to work, people would need to bind together a specific <em>control state</em> (e.g., heightened focus of attention) and their memory of the attentionally demanding environment. In this line of research, I examine how learned contextual cues guide strategic adjustment to attentional demands, showing that people can generalize cognitive strategies across similar contexts, and which brain regions support this type of control-learning. For example publications, see:</p>  
 		<ul>
 			<li><strong>Bejjani, C</strong>., Zhang, Z., and Egner, T. (2018). Control by association: Transfer of implicitly primed attentional states across linked stimuli. <em>Psychonomic Bulletin and Review</em>, 25(2): 617-626<em>.</em> <a href="http://dx.doi.org/10.3758/s13423-018-1445-6">http://dx.doi.org/10.3758/s13423-018-1445-6</a></li>
 			<li><strong>Bejjani, C.</strong>, Dolgin, J., Zhang, Z.*, and Egner, T. (in press; preprint/registration available <a href="https://osf.io/7jfbp/" target="_blank" rel="noopener noreferrer">here</a>). Disentangling the roles of cue visibility and knowledge in adjusting cognitive control. <em>Psychological Science</em>.</li>
@@ -104,7 +144,7 @@
 			<li>DiMenichi, B.C., Lempert, K.M., <strong>Bejjani, C.</strong>, and Tricomi, E. (2018). Writing about past failures attenuates cortisol responses and sustained attention deficits following psychosocial stress. <em>Frontiers in Behavioral Neuroscience</em>, 12: 45. <a href="http://doi.org/10.3389/fnbeh.2018.00045" target="_blank" rel="noopener noreferrer">http://doi.org/10.3389/fnbeh.2018.00045</a>.</li>
 			<li>Yang, B.W.**, <strong>Bejjani, C.</strong>**, Albus, T., O'Connor, T., and Hard, B.M. (submitted to <em>Teaching of Psychology</em>; draft available on request). Teaching intelligence mindsets with student data.</li>
 		</ul>
-		<p><dl id="attachment_743" class="wp-caption alignleft" style="width:300px;"><dt class="wp-caption-dt"><img class="alignleft size-medium wp-image-743" src="https://christinabejjani.files.wordpress.com/2018/12/psychonomics2018poster.jpg?w=300" alt="psychonomics2018poster" width="300" height="279" /></dt><dd class="wp-caption-dd">I earned a <a href="https://www.psychonomic.org/page/2018GraduateTravelRecipients" target="_blank" rel="noopener noreferrer">Graduate Travel Award</a> at Psychonomics 2018.</dd></dl>In another line of research under this topic, I examine whether individual differences play a role in mental health outcomes. <em>Cognitive control</em> is thought to be altered in many psychiatric disorders, but few studies have examined these deficits in control on a large-scale individual difference level. I recently received a Germinator Grant from the Duke Institute of Brain Sciences to investigate the computational mechanisms underlying individual differences in transdiagnostic deficits in cognitive control. Ask me for more details on this line of work if you're interested. Although the project is preregistered, it's still too early to discuss the larger themes, hypotheses, results, etc.</p>  
+		<p>I earned a <a href="https://www.psychonomic.org/page/2018GraduateTravelRecipients" target="_blank" rel="noopener noreferrer">Graduate Travel Award</a> at Psychonomics 2018.</dd></dl>In another line of research under this topic, I examine whether individual differences play a role in mental health outcomes. <em>Cognitive control</em> is thought to be altered in many psychiatric disorders, but few studies have examined these deficits in control on a large-scale individual difference level. I recently received a Germinator Grant from the Duke Institute of Brain Sciences to investigate the computational mechanisms underlying individual differences in transdiagnostic deficits in cognitive control. Ask me for more details on this line of work if you're interested. Although the project is preregistered, it's still too early to discuss the larger themes, hypotheses, results, etc.</p>  
 
 		<p>A tangential paper that I worked on before attending Duke examined whether choosing to exert physical effort impacts neural responses to actual effort expenditure. This research can help inform treatments for depression.</p>  
 		<ul>
@@ -115,20 +155,30 @@
 		<p>If you have any questions about my research, please feel free to contact me at christina.bejjani AT duke.edu. Thanks so much for visiting!</p>  
 		
 		</div>
-
-    </main>
-    <!-- /.container -->
-
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+    
+    <!-- Bootstrap core JavaScript-->
     <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script>
-        window.jQuery || document.write('<script src="../../../../assets/js/vendor/jquery-slim.min.js"><\/script>')
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+	<script src="js/bootstrap-hover-dropdown.js"></script>
+	
+	<script type="text/javascript">
+	$(document).ready(function(){
 
-    </script>
-    <script src="js/popper.min.js"></script>
-    <script src="https://unpkg.com/@popperjs/core@2"></script>
+	$("#dyn-bttn").click(function(){
+   	    window.open('https://drive.google.com/file/d/1Y6cO0rxWH-vK7CoJ4QmeVlPCPLocUc-w/view?usp=sharing','_blank');
+    });
+		
+		$('.dropdown-menu').dropdownHover(options);
+
+	});
+	</script>
 </body>
-
 </html>
