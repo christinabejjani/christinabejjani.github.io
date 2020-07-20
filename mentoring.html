@@ -9,98 +9,148 @@
     <meta name="description" content="Personal website for Christina Bejjani">
     <meta name="keywords" content="Psychology, Learning, Memory, Attention, Christina Bejjani, C. Bejjani">
     <meta name="author" content="Christina Bejjani"> -->
-
-
+	
     <link href="files/favi_icon_website2.png" rel="icon" type="image/x-icon" />
 	
     <title>Christina Bejjani</title>
 
-    <!-- Bootstrap core CSS -->
+    <!-- Bootstrap core CSS + font awesome JS just for the nav bar collapsible icon-->
     <link href="css/bootstrap.min.css" rel="stylesheet">
+	<script src="https://kit.fontawesome.com/25e7f7a6fa.js" crossorigin="anonymous"></script>
+	
+	<!-- Custom CSS -->
+	<link href="css/allpages.css" rel="stylesheet">
 
+	<!-- Loading fonts -->
     <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Bebas+Neue|Cinzel|Lato|Merriweather|Noto+Sans|Open+Sans|Playfair+Display+SC|Poiret+One|Prata|Raleway|Roboto|Roboto+Condensed|Sarabun|Tinos|Vidaloka&display=swap" rel="stylesheet">
 </head>
 
 <body>
-<!--
-	<div class="mobile-btn header-btn pull-right hidden-xs">
-	<a href="#" title="Smartphone View" class="icon-mobile-phone"></a>
-	</div>
+	<div class="container-fluid">
+		<div class="row no-gutter">
+			<div class="d-none d-flex col-md-1"></div>
+			<div class="d-none d-xl-flex col-md-3 col-lg-4"></div>
+				<div class="col-md-9 col-lg-9 col-xl-7">
+			
+					<div class="d-flex align-items-center">
+						<div class="col-lg-9 mx-auto">
+							<nav class="navbar-nav navbar-expand-lg nav-pad" role = "navigation">
+								<div style="font-family: Playfair Display SC">
+									  <div class="navbar-header d-sm-block d-md-block d-lg-none">
+										  <button type = "button" class = "navbar-toggle" data-toggle = "collapse" data-target = "#navbar-collapse" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+											 <span class="navbar-toggler-icon">
+												<i class="fas fa-bars" style="color: #367eb8"></i>
+											 </span>
+										  </button>
+									   </div>
+										<!--Note that ID on this collapse navbar-collapse class MUST match the data-target for the button above-->
+										<div class="collapse navbar-collapse" id="navbar-collapse">
+										<ul class="navbar-nav ml-auto topnav" role="navigation">
+											<li class="nav-item">
+												<a class="nav-link" href="index.html">About<span class="sr-only">(current)</span></a>
+											</li>
+											<div id = "researchdropdown">
+												<li class="dropdown">
+												<a class="nav-link dropdown" href="#" data-toggle="dropdown" data-hover="dropdown" role="button" aria-haspopup="true" aria-expanded="false" aria-labelledby="researchdropdown">Research</a>
+												<ul class="dropdown-menu other-menu">
+													<span class="dropdown-menu-arrow"></span>
+													<li><a href="research.html" class="nav-link-child" tabindex="-1">Summary</a></li>
+													<li><a href="publications.html" class="nav-link-child" tabindex="-1">Publications</a></li>
+												</ul>
+												</li>
+											</div>
+											<div id = "teachingdropdown">
+												<li class="dropdown">
+												<a class="nav-link dropdown" href="#" data-toggle="dropdown" data-hover="dropdown" role="button" aria-haspopup="true" aria-expanded="false" aria-labelledby="teachingdropdown">Teaching</a>
+												<ul class="dropdown-menu other-menu">
+													<span class="dropdown-menu-arrow"></span>
+													<li><a href="teaching.html" class="nav-link-child" tabindex="-1">Philosophy</a></li>
+													<li><a href="teachingportfolio.html" class="nav-link-child" tabindex="-1">Portfolio</a></li>
+												</ul>
+												</li>
+											</div>
+											<div id = "diversitydropdown">
+												<li class="dropdown">
+												<a class="nav-link dropdown" href="#" data-toggle="dropdown" data-hover="dropdown" role="button" aria-haspopup="true" aria-expanded="false" aria-labelledby="diversitydropdown">Diversity</a>
+												<ul class="dropdown-menu other-menu">
+													<span class="dropdown-menu-arrow"></span>
+													<li><a href="diversity.html" class="nav-link-child" tabindex="-1">Philosophy</a></li>
+													<li><a href="diversityresources.html" class="nav-link-child" tabindex="-1">Portfolio</a></li>
+												</ul>
+												</li>
+											</div>
+											<div id = "mentoringdropdown">
+												<li class="dropdown">
+												<a class="nav-link dropdown active" href="#" data-toggle="dropdown" data-hover="dropdown" role="button" aria-haspopup="true" aria-expanded="false" aria-labelledby="mentoringdropdown">Mentoring</a>
+												<ul class="dropdown-menu mentoring-menu">
+													<span class="dropdown-menu-arrow"></span>
+													<li><a href="mentoring.html" class="nav-link-child" tabindex="-1">Philosophy</a></li>
+													<li><a href="mentoringportfolio.html" class="nav-link-child" tabindex="-1">Portfolio</a></li>
+												</ul>
+												</li>
+											</div>
+											<div id = "applieddropdown">
+												<li class="dropdown">
+												<a class="nav-link dropdown" href="#" data-toggle="dropdown" data-hover="dropdown" role="button" aria-haspopup="true" aria-expanded="false" aria-labelledby="applieddropdown">Applied</a>
+												<ul class="dropdown-menu applied-menu">
+													<span class="dropdown-menu-arrow"></span>
+													<li><a href="resume.html" class="nav-link-child" tabindex="-1">Resume</a></li>									
+													<li><a href="appliedresearch.html" class="nav-link-child" tabindex="-1">Portfolio</a></li>
+												</ul>
+												</li>
+											</div>
+										</ul>
+										<hr>
+										</div>
+									</div>
+								</nav>
+							<h1 class="d-sm-block d-md-block display-4" style="font-family: Playfair Display SC">Mentoring</h1>
+							<h4 class="display-6" style="font-family: Open Sans"><em>Philosophy</em></h4>
+							<div style="font-family: Open Sans">
+								<div class="row justify-content-start" style="padding: 15px">
 
-	<div class="tablet-btn header-btn pull-right hidden-xs">
-	<a href="#" title="Tablet View" class="icon-tablet"></a>
-	</div>
+								<p>[last updated spring 2019; need to add in links]</p>
+								
+								<p> <b>Please note that this website is currently under construction.</b></p>
 
-	<div class="desktop-btn header-btn pull-right hidden-xs">
-	<a href="#" title="Desktop View" class="icon-desktop"></a>
-	</div>
--->
-    <main role="main" class="container">
-        <div>
-            <h1 class="d-none d-md-block name" style="margin-bottom: 0; font-family: Playfair Display SC">Christina Bejjani</h1>
-            <h1 class="d-md-none" style="margin-bottom: 0; font-family: Playfair Display SC">C. Bejjani</h1>
+								<p>As psychologists and neuroscientists, we must grow our mentorship skills across our research, teaching, and service to foster our own professional development. Mentorship has always been an important part of my career trajectory. My cognitive psychology professor walked me through the process of approaching researchers about volunteering in their labs. My academic advisor counseled me through the best courses that matched my long-term goals and advised me on how to improve my scientific writing through her own class. These mentors all shared similar qualities: they promoted the advancement of women and underrepresented students within science, supported inclusive environments in their labs and classrooms, and pushed students to develop professional skills by investing the necessary effort and time into achieving their long-term goals.</p>
 
-            <p><em>PhD candidate at Duke University </em></p>
-            <ul class="nav nav-pills flex-column flex-sm-row" role="navigation">
-                <li class="nav-item">
-                    <a class="nav-link active" href="index.html">about</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="research.html">research</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="publications.html">publications</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="teaching.html">teaching</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="diversity.html">diversity</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="mentoring.html">mentoring</a>
-                </li>
-		<li class="nav-item">
-                    <a class="nav-link" href="contact.html">contact</a>
-                </li>
-		<li class="nav-item">
-                    <a class="nav-link" href="/files/BejjaniCV.pdf" target="_blank">cv [pdf]</a>
-                </li>
-            </ul>
-            <hr>
-        </div>
+								<p>Within my research program at Duke and Rutgers-Newark, I have mentored several students through project-based inquiry, setting ambitious but reasonable goals for each semester, developing novel questions that need sustained inquiry and enable student agency, and encouraging students to reflect on their own learning. For the first semester within lab, students usually read approximately five to ten relevant review and empirical articles, run participants on a joint research project, and attend lab meeting, allowing students to feel out the lab culture and become familiar with discipline-specific jargon while being attached to a particular project that they consider when reading the journal articles. After the first semester, we develop individual-specific semester goals scaffolded based on the student’s long-term goals. For instance, one student interested in graduate school grew intrigued by subliminal cueing and proposed a research project as part of her Independent Study; we subsequently fleshed out her proposal into a Preregistered Direct Replication at <em>Psychological Science</em>. She also advanced her presentation skills at national and local conferences, such as <em>NC Cognition</em> and <em>Cognitive Neuroscience Society</em>, and networked with professors with whom she would like to study in graduate school. She and another student interested in graduate school further developed their independent coding skills by programming joint research projects in PsychoPy, with occasional guidance and additional resources from me. I also co-mentored a student for whom my colleague and I developed weekly goals with the overall semester (and successful!) goal of creating a web application and natural language based algorithm. Typically, students also present at least once a semester in lab meeting and are included on any manuscripts to which they significantly contributed, normalizing their inclusion in lab practices and fostering their oral and written science communication skills. Finally, to encourage student self-reflection and rapport building, I take students out to lunch as an-end-of-semester celebration of their successes and frustrations as part of the research process. These general policies have led to students satisfying their curiosity by asking questions during and outside of lab meeting as well as seeking general advice on classes and strategies and successfully applying for relevant awards and grants to achieve their long-term goals.</p>
 
-        <div>
+								<p>Informal mentoring within the lab and department has also bolstered my teaching. In my second year at Duke, I co-hosted a three-hour workshop on programming in JavaScript and running experiments on Amazon Mechanical Turk (MTurk). However, my colleague and I did not host this workshop in subsequent years due to time commitments. Nonetheless, fellow graduate students and research assistants approached us with questions about MTurk and JavaScript. I therefore developed our previous workshop materials into an online repository of videos and tutorials, available at <a href="https://socialscienceprogramming.github.io">https://socialscienceprogramming.github.io</a>. This repository is meant to help junior researchers, whether undergraduates, post-bac research assistants, graduate students, or post-doctoral scholars, develop their programming skills for crowdsourced social science experiments. Within the classroom, I am also open about my career trajectory as a graduate student and the struggles and successes that I have had along the way, encouraging students to chat more with me if they are interested in pursuing psychology and neuroscience research. Finally, my Scholarship of Teaching and Learning research on intelligence mindset has informed my teaching and mentorship in at least two ways. First, as a mentor and teacher, I promote the tenets of a growth mindset, emphasizing that students have the potential to develop their skills and intelligence through effort and praising the learning process that students undergo, such as the struggle that inevitably results when coding or solving statistical problems. Second, my colleague and I have asked students, some of whom I taught, to describe whether and why they consider themselves to be intelligent. One emergent theme was that students devalued their own effort in school and that comparison to their peers led some students to believe that they were not smart. Thus, my colleague and I have plans to organize an art show of these student responses in the library or wellness center, showing Duke students that they are not alone in their feelings and that imposter syndrome is real and pervasive, but ultimately, an inaccurate representation of their abilities and potential.</p>
 
-		<p>[last updated spring 2019; need to add in links]</p>
-		
-		<p> <b>Please note that this website is currently under construction.</b></p>
+								<p>My other mentorship efforts have been directed towards the advancement of women within science and engineering. Most social programs are aimed at combating institutional and societal inequalities, but few address how to encourage feelings of belonging among the community. My first year at Duke, I developed a mentoring program for the Women in Science and Engineering, coordinating across several STEM departments to match interested graduate and undergraduate students whose goals and time commitments aligned. Psychological research has suggested that programs that facilitate the exposure to female-identified experts and peers can inoculate women's self-concept against stereotypes, builds resilience, and increases social belonging (cf. Dasgupta and Stout, 2014; Dasgupta, 2011). To build on these efforts within my own department and promote the participation and retention of women in the sciences, I successfully applied for a Professional Development Grant with Dr. Beth Marsh, forming the Women’s Support Network for Psychology and Neuroscience. The primary aims of the Women's Support Network were 1) to facilitate a supportive network that grows feelings of belonging and self-efficacy through exposure to peer and expert role models and direct mentorship and 2) to promote the work of senior women in the field as well as the diverse career paths that they may take. We subsequently hosted a meet-and-great panel on “How to Advocate for Yourself,” fulfilling our goal of establishing community and belonging within the department and providing mentorship and professional development to junior scientists. We also hosted two outside speakers within and outside of academia for further professional development and <a href="https://gradschool.duke.edu/professional-development/blog/making-time-write-value-writing-groups">formed a biweekly writing group to promote community-building and encourage productivity across a number of writing goals</a>.</p>
 
-		<p>As psychologists and neuroscientists, we must grow our mentorship skills across our research, teaching, and service to foster our own professional development. Mentorship has always been an important part of my career trajectory. My cognitive psychology professor walked me through the process of approaching researchers about volunteering in their labs. My academic advisor counseled me through the best courses that matched my long-term goals and advised me on how to improve my scientific writing through her own class. These mentors all shared similar qualities: they promoted the advancement of women and underrepresented students within science, supported inclusive environments in their labs and classrooms, and pushed students to develop professional skills by investing the necessary effort and time into achieving their long-term goals.</p>
+								<p>Growing as a mentor is fundamental to my professional development. To this end, I have been a community leader and mentor ever since I was a residential advisor at Pomona College. I was selected for the inaugural “Passing the Torch” program at the Duke Women’s Center, served as a mentor to first-year graduate students within my department, and attended the Mentoring Workshop series hosted by the Duke Institute for Brain Sciences. Looking forward, I am eager to implement some of the suggestions that I learned from this workshop and the “Engaging Undergraduates in Publishable Research: Best Practices” research topic within <em>Frontiers in Psychology</em>. For instance, I would like to have my students write about the traits of successful scientists, pushing them to develop a scientific identity, and the traits or actions that they would like me as a mentor to mention in future recommendation letters, pushing me to notice these behaviors both in the moment and over our time together. I would also like students to write weekly reflections about their work, which will help me get to know my students better and document their effort in lab. Fostering my mentorship skills will only improve my skills as a researcher and teacher.</p>
 
-		<p>Within my research program at Duke and Rutgers-Newark, I have mentored several students through project-based inquiry, setting ambitious but reasonable goals for each semester, developing novel questions that need sustained inquiry and enable student agency, and encouraging students to reflect on their own learning. For the first semester within lab, students usually read approximately five to ten relevant review and empirical articles, run participants on a joint research project, and attend lab meeting, allowing students to feel out the lab culture and become familiar with discipline-specific jargon while being attached to a particular project that they consider when reading the journal articles. After the first semester, we develop individual-specific semester goals scaffolded based on the student’s long-term goals. For instance, one student interested in graduate school grew intrigued by subliminal cueing and proposed a research project as part of her Independent Study; we subsequently fleshed out her proposal into a Preregistered Direct Replication at <em>Psychological Science</em>. She also advanced her presentation skills at national and local conferences, such as <em>NC Cognition</em> and <em>Cognitive Neuroscience Society</em>, and networked with professors with whom she would like to study in graduate school. She and another student interested in graduate school further developed their independent coding skills by programming joint research projects in PsychoPy, with occasional guidance and additional resources from me. I also co-mentored a student for whom my colleague and I developed weekly goals with the overall semester (and successful!) goal of creating a web application and natural language based algorithm. Typically, students also present at least once a semester in lab meeting and are included on any manuscripts to which they significantly contributed, normalizing their inclusion in lab practices and fostering their oral and written science communication skills. Finally, to encourage student self-reflection and rapport building, I take students out to lunch as an-end-of-semester celebration of their successes and frustrations as part of the research process. These general policies have led to students satisfying their curiosity by asking questions during and outside of lab meeting as well as seeking general advice on classes and strategies and successfully applying for relevant awards and grants to achieve their long-term goals.</p>
 
-		<p>Informal mentoring within the lab and department has also bolstered my teaching. In my second year at Duke, I co-hosted a three-hour workshop on programming in JavaScript and running experiments on Amazon Mechanical Turk (MTurk). However, my colleague and I did not host this workshop in subsequent years due to time commitments. Nonetheless, fellow graduate students and research assistants approached us with questions about MTurk and JavaScript. I therefore developed our previous workshop materials into an online repository of videos and tutorials, available at <a href="https://socialscienceprogramming.github.io">https://socialscienceprogramming.github.io</a>. This repository is meant to help junior researchers, whether undergraduates, post-bac research assistants, graduate students, or post-doctoral scholars, develop their programming skills for crowdsourced social science experiments. Within the classroom, I am also open about my career trajectory as a graduate student and the struggles and successes that I have had along the way, encouraging students to chat more with me if they are interested in pursuing psychology and neuroscience research. Finally, my Scholarship of Teaching and Learning research on intelligence mindset has informed my teaching and mentorship in at least two ways. First, as a mentor and teacher, I promote the tenets of a growth mindset, emphasizing that students have the potential to develop their skills and intelligence through effort and praising the learning process that students undergo, such as the struggle that inevitably results when coding or solving statistical problems. Second, my colleague and I have asked students, some of whom I taught, to describe whether and why they consider themselves to be intelligent. One emergent theme was that students devalued their own effort in school and that comparison to their peers led some students to believe that they were not smart. Thus, my colleague and I have plans to organize an art show of these student responses in the library or wellness center, showing Duke students that they are not alone in their feelings and that imposter syndrome is real and pervasive, but ultimately, an inaccurate representation of their abilities and potential.</p>
+								</div>
 
-		<p>My other mentorship efforts have been directed towards the advancement of women within science and engineering. Most social programs are aimed at combating institutional and societal inequalities, but few address how to encourage feelings of belonging among the community. My first year at Duke, I developed a mentoring program for the Women in Science and Engineering, coordinating across several STEM departments to match interested graduate and undergraduate students whose goals and time commitments aligned. Psychological research has suggested that programs that facilitate the exposure to female-identified experts and peers can inoculate women's self-concept against stereotypes, builds resilience, and increases social belonging (cf. Dasgupta and Stout, 2014; Dasgupta, 2011). To build on these efforts within my own department and promote the participation and retention of women in the sciences, I successfully applied for a Professional Development Grant with Dr. Beth Marsh, forming the Women’s Support Network for Psychology and Neuroscience. The primary aims of the Women's Support Network were 1) to facilitate a supportive network that grows feelings of belonging and self-efficacy through exposure to peer and expert role models and direct mentorship and 2) to promote the work of senior women in the field as well as the diverse career paths that they may take. We subsequently hosted a meet-and-great panel on “How to Advocate for Yourself,” fulfilling our goal of establishing community and belonging within the department and providing mentorship and professional development to junior scientists. We also hosted two outside speakers within and outside of academia for further professional development and <a href="https://gradschool.duke.edu/professional-development/blog/making-time-write-value-writing-groups">formed a biweekly writing group to promote community-building and encourage productivity across a number of writing goals</a>.</p>
-
-		<p>Growing as a mentor is fundamental to my professional development. To this end, I have been a community leader and mentor ever since I was a residential advisor at Pomona College. I was selected for the inaugural “Passing the Torch” program at the Duke Women’s Center, served as a mentor to first-year graduate students within my department, and attended the Mentoring Workshop series hosted by the Duke Institute for Brain Sciences. Looking forward, I am eager to implement some of the suggestions that I learned from this workshop and the “Engaging Undergraduates in Publishable Research: Best Practices” research topic within <em>Frontiers in Psychology</em>. For instance, I would like to have my students write about the traits of successful scientists, pushing them to develop a scientific identity, and the traits or actions that they would like me as a mentor to mention in future recommendation letters, pushing me to notice these behaviors both in the moment and over our time together. I would also like students to write weekly reflections about their work, which will help me get to know my students better and document their effort in lab. Fostering my mentorship skills will only improve my skills as a researcher and teacher.</p>
-
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
 		</div>
-
-    </main>
-    <!-- /.container -->
-
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
+    
+    <!-- Bootstrap core JavaScript-->
     <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script>
-        window.jQuery || document.write('<script src="../../../../assets/js/vendor/jquery-slim.min.js"><\/script>')
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+	<script src="js/bootstrap-hover-dropdown.js"></script>
+	
+	<script type="text/javascript">
+	$(document).ready(function(){
 
-    </script>
-    <script src="js/popper.min.js"></script>
-    <script src="https://unpkg.com/@popperjs/core@2"></script>
+	$("#dyn-bttn").click(function(){
+   	    window.open('https://drive.google.com/file/d/1Y6cO0rxWH-vK7CoJ4QmeVlPCPLocUc-w/view?usp=sharing','_blank');
+    });
+		
+		$('.dropdown-menu').dropdownHover(options);
+
+	});
+	</script>
 </body>
-
 </html>
