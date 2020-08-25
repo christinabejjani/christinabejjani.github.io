@@ -89,3 +89,12 @@
 .nav-pad{padding-bottom:4rem!important}
 
 .fa-li, .fas, .fa-angle-up{color:#36B870}
+
+.masthead {
+  height: 25vh;
+  /*min-height: 500px;*/
+  background-image: url('https://christinabejjani.github.io/files/dukechapel.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
