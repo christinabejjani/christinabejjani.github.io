@@ -126,7 +126,7 @@
 					<p> Testing whether the scroll to top will work</p>
 				</div>
 			</div>
-			<div style="float: right">
+			<div style="float: right" id="top-scroll">
 				<a class="copy-link" href="#top" data-toggle="tooltip" data-placement="bottom" title="Scroll to top">
 					<i class="fas fa-angle-up fa-2x"></i>
 				</a>
@@ -146,6 +146,7 @@
 
 		$("a[href='#top']").click(function() {
             $('html,body').animate({scrollTop: 0}, "slow");
+			$('#top-scroll').tooltip('hide');
 			return false;
         });
 		
