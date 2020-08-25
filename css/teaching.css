@@ -1,0 +1,10 @@
+.masthead {
+  height: 25vh;
+  /*min-height: 500px;*/
+  background-image: url('https://christinabejjani.github.io/files/dukechapel.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.nav-pad{padding-top:1rem!important; padding-bottom:5rem!important; justify-content: center;}
