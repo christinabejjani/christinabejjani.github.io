@@ -146,13 +146,10 @@
 
 		$("a[href='#top']").click(function() {
             $('html,body').animate({scrollTop: 0}, "slow");
-			$('#top-scroll').tooltip('hide');
 			return false;
         });
 		
-		$(function () {
-		  $('[data-toggle="tooltip"]').tooltip()
-		})
+		$('[rel=tooltip]').tooltip({ trigger: "hover" });
 
 	});
 	</script>
