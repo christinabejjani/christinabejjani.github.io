@@ -116,17 +116,21 @@
 					<p>Put card with carousel of teaching images that will link to teaching statement</p>
 								
 					<p>Beneath that, put card with image of us at Bridgette's Psych One conference as link to the teaching portfolio</p>
+					
+					<p> Testing whether the scroll to top will work</p>
+					
+					<p> Testing whether the scroll to top will work</p>
+
+					<p> Testing whether the scroll to top will work</p>
+
+					<p> Testing whether the scroll to top will work</p>
 				</div>
 			</div>
-		<div style="float: right">
-			<ul class="nav nav-pills" id="scroll-to-top">
-				<li class="nav-item">
-					<a class="nav-link svg">
-						<svg class="icon icon-up" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M0 16.67l2.829 2.83 9.175-9.339 9.167 9.339 2.829-2.83-11.996-12.17z"/></svg>
-					</a>
-				</li>
-			</ul>
-		</div>
+			<div style="float: right">
+				<a class="nav-link" href="#top">
+					<i class="fas fa-angle-up"></i>
+				</a>
+			</div>
 		</div>
 	</section>
     
@@ -140,10 +144,9 @@
 	<script type="text/javascript">
 	$(document).ready(function(){
 
-		$('#scroll-to-top').on('click', function(e) {
-            $('html,body').animate({
-                scrollTop: 0
-            }, 400);
+		$("a[href='#top']").click(function() {
+            $('html,body').animate({scrollTop: 0}, "slow");
+			return false;
         });
 
 	});
