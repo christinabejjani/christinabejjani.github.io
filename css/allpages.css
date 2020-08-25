@@ -101,7 +101,7 @@
 
 .bttn {text-align: center; border-radius: 2px; border: none; outline:none}
 
-.dim,{opacity:1}
+.dim{opacity:1}
 .dim,.dim:focus,.dim:hover{transition:opacity .15s ease-in}
 .dim:focus,.dim:hover{opacity:.5}
 .dim:active,.dim:visited{opacity:.8;transition:opacity .15s ease-out}
@@ -112,3 +112,5 @@
 
 .bg-blue{background-color:#367eb8}
 .bg-green{background-color:#36B870} /*complementary green to the pink which forms the triad with the blue*/
+
+.card{border: none}
