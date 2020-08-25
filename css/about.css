@@ -71,17 +71,3 @@ a.svg {
 .icon-twitter:hover {
     background-color: #1DA1F2;
 }
-
-.bttn {width: 12em; text-align: center; border-radius: 2px; border: none; outline:none}
-
-.dim,{opacity:1}
-.dim,.dim:focus,.dim:hover{transition:opacity .15s ease-in}
-.dim:focus,.dim:hover{opacity:.5}
-.dim:active,.dim:visited{opacity:.8;transition:opacity .15s ease-out}
-
-.pv2{padding-top:.5rem;padding-bottom:.5rem}
-
-.white{color:#fff}
-
-.bg-blue{background-color:#367eb8}
-.bg-green{background-color:#36B870} /*complementary green to the pink which forms the triad with the blue*/
