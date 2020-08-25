@@ -53,50 +53,50 @@
 											</li>
 											<div id = "researchdropdown">
 												<li class="dropdown">
-												<a class="nav-link dropdown" href="#" data-toggle="dropdown" data-hover="dropdown" role="button" aria-haspopup="true" aria-expanded="false" aria-labelledby="researchdropdown">Research</a>
+												<a class="nav-link dropdown" href="research.html" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" aria-labelledby="researchdropdown">Research</a>
 												<ul class="dropdown-menu other-menu">
 													<span class="dropdown-menu-arrow"></span>
-													<li><a href="research.html" class="nav-link-child" tabindex="-1">Summary</a></li>
+													<li><a href="researchsummary.html" class="nav-link-child" tabindex="-1">Summary</a></li>
 													<li><a href="publications.html" class="nav-link-child" tabindex="-1">Publications</a></li>
 												</ul>
 												</li>
 											</div>
 											<div id = "teachingdropdown">
 												<li class="dropdown">
-												<a class="nav-link dropdown" href="#" data-toggle="dropdown" data-hover="dropdown" role="button" aria-haspopup="true" aria-expanded="false" aria-labelledby="teachingdropdown">Teaching</a>
+												<a class="nav-link dropdown" href="teaching.html" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" aria-labelledby="teachingdropdown">Teaching</a>
 												<ul class="dropdown-menu other-menu">
 													<span class="dropdown-menu-arrow"></span>
-													<li><a href="teaching.html" class="nav-link-child" tabindex="-1">Philosophy</a></li>
+													<li><a href="teachingstatement.html" class="nav-link-child" tabindex="-1">Philosophy</a></li>
 													<li><a href="teachingportfolio.html" class="nav-link-child" tabindex="-1">Portfolio</a></li>
 												</ul>
 												</li>
 											</div>
 											<div id = "diversitydropdown">
 												<li class="dropdown">
-												<a class="nav-link dropdown" href="#" data-toggle="dropdown" data-hover="dropdown" role="button" aria-haspopup="true" aria-expanded="false" aria-labelledby="diversitydropdown">Diversity</a>
+												<a class="nav-link dropdown" href="diversity.html" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" aria-labelledby="diversitydropdown">Diversity</a>
 												<ul class="dropdown-menu other-menu">
 													<span class="dropdown-menu-arrow"></span>
-													<li><a href="diversity.html" class="nav-link-child" tabindex="-1">Philosophy</a></li>
+													<li><a href="diversitystatement.html" class="nav-link-child" tabindex="-1">Philosophy</a></li>
 													<li><a href="diversityresources.html" class="nav-link-child" tabindex="-1">Portfolio</a></li>
 												</ul>
 												</li>
 											</div>
 											<div id = "mentoringdropdown">
 												<li class="dropdown">
-												<a class="nav-link dropdown" href="#" data-toggle="dropdown" data-hover="dropdown" role="button" aria-haspopup="true" aria-expanded="false" aria-labelledby="mentoringdropdown">Mentoring</a>
+												<a class="nav-link dropdown" href="mentoring.html" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" aria-labelledby="mentoringdropdown">Mentoring</a>
 												<ul class="dropdown-menu mentoring-menu">
 													<span class="dropdown-menu-arrow"></span>
-													<li><a href="mentoring.html" class="nav-link-child" tabindex="-1">Philosophy</a></li>
+													<li><a href="mentoringstatement.html" class="nav-link-child" tabindex="-1">Philosophy</a></li>
 													<li><a href="mentoringportfolio.html" class="nav-link-child" tabindex="-1">Portfolio</a></li>
 												</ul>
 												</li>
 											</div>
 											<div id = "applieddropdown">
 												<li class="dropdown">
-												<a class="nav-link dropdown" href="#" data-toggle="dropdown" data-hover="dropdown" role="button" aria-haspopup="true" aria-expanded="false" aria-labelledby="applieddropdown">Applied</a>
+												<a class="nav-link dropdown" href="applied.html" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" aria-labelledby="applieddropdown">Applied</a>
 												<ul class="dropdown-menu applied-menu">
 													<span class="dropdown-menu-arrow"></span>
-													<li><a href="resume.html" class="nav-link-child" tabindex="-1">Resume</a></li>									
+													<li><a href="files/BejjaniResume.pdf" class="nav-link-child" tabindex="-1">Resume</a></li>									
 													<li><a href="appliedresearch.html" class="nav-link-child" tabindex="-1">Portfolio</a></li>
 												</ul>
 												</li>
@@ -182,6 +182,11 @@
 					</div>
 				</div>
 			</div>
+			<div style="float: right" id="top-scroll">
+				<a class="copy-link" href="#top" rel="tooltip" data-toggle="tooltip" data-placement="bottom" title="Scroll to top">
+					<i class="fas fa-angle-up fa-2x"></i>
+				</a>
+			</div>
 		</div>
     
     <!-- Bootstrap core JavaScript-->
@@ -190,16 +195,21 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
-	<script src="js/bootstrap-hover-dropdown.js"></script>
 	
 	<script type="text/javascript">
 	$(document).ready(function(){
 
-	$("#dyn-bttn").click(function(){
-   	    window.open('https://drive.google.com/file/d/1Y6cO0rxWH-vK7CoJ4QmeVlPCPLocUc-w/view?usp=sharing','_blank');
-    });
+		$("#dyn-bttn").click(function(){
+			window.open('https://christinabejjani.github.io/files/BejjaniCV.pdf','_blank');
+		});
+	
+		$("a[href='#top']").click(function() {
+            $('html,body').animate({scrollTop: 0}, "slow");
+			return false;
+        });
 		
-		$('.dropdown-menu').dropdownHover(options);
+		$('[rel=tooltip]').tooltip({ trigger: "hover" });
+	
 
 	});
 	</script>
