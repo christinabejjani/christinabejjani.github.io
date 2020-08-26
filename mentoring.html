@@ -230,8 +230,9 @@
 		
 		function checkSize(){
 			var w = window.innerWidth;
-			if (w < 600)
-			{$('#iframe').addClass('embed-responsive-item');}
+			if (w < 600){
+			$('#iframe').addClass('embed-responsive-item');
+			$('#iframe').removeAttr( 'style' );}
 
 	});
 	</script>
