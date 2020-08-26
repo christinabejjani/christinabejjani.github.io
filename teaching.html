@@ -155,23 +155,21 @@
 							<div class="card-body">
 								<h2 class="d-sm-block d-md-block display-6" style="font-family: Playfair Display SC, serif; padding-bottom: 0.75rem">Teaching Philosophy</h2>
 								<p class="card-text">"As psychologists and neuroscientists, we are presented with a unique opportunity: what we learn through research and what our students learn from us are reflected in the daily realities of people around the world and even within the classroom. Whether we research memory retention or <a class="copy-link" href="https://christinabejjani.com/research/" target="_blank" rel="noopener">feedback-based learning as a means of improving academic achievement</a>, we can use methods and insights from our work to help us understand and improve education. For example, my Scholarship of Teaching and Learning research broadly examined <a class="copy-link" href="https://docs.google.com/presentation/d/10l02KnoYVxHO1avPTHba26aaH4S6FcTO-vaoP8MSeJc/preview" target="_blank" rel="noopener">how our views of intelligence can impact educational outcomes</a>..."</p>
-								<button href="teachingstatement.html" class="bttn link dim pv2 white bg-green">Read more</button>
+								<button id="tsbtn" class="bttn link dim pv2 white bg-green">Read more</button>
 							</div>
 						</div>
 					</div>
 				</div>
-				<div class="container-fluid">
-					<div class="card card-img-top mb-3">
+				<div class="card card-img-top mb-3">
+					<div class="card-body">
+						<div class="row">
+							<div class="col"><img class="img-fluid mx-auto d-block" src="files/teaching10.JPEG" alt="teach10"></div>
+							<div class="col"><img class="img-fluid mx-auto d-block" src="files/teaching11.JPG" alt="teach11"></div>
+						</div>
 						<div class="card-body">
-							<div class="row">
-								<div class="col"><img class="img-fluid mx-auto d-block" src="files/teaching10.JPEG" alt="teach10"></div>
-								<div class="col"><img class="img-fluid mx-auto d-block" src="files/teaching11.JPG" alt="teach11"></div>
-							</div>
-							<div class="card-body">
-								<h2 class="d-sm-block d-md-block display-6" style="font-family: Playfair Display SC, serif; padding-bottom: 0.75rem">Teaching Portfolio</h2>
-								<p class="card-text">I have served as instructor of record for several courses, attended teaching-oriented conferences, completed certificates for additional professional development, tutored students on the side...</p>
-								<button href="teachingportfolio.html" class="bttn link dim pv2 white bg-green">Read more</button>
-							</div>
+							<h2 class="d-sm-block d-md-block display-6" style="font-family: Playfair Display SC, serif; padding-bottom: 0.75rem">Teaching Portfolio</h2>
+							<p class="card-text">I have served as instructor of record for several courses, attended teaching-oriented conferences, completed certificates for additional professional development, tutored students on the side...</p>
+							<button id="tpbtn" class="bttn link dim pv2 white bg-green">Read more</button>
 						</div>
 					</div>
 				</div>
@@ -199,6 +197,10 @@
         });
 		
 		$('[rel=tooltip]').tooltip({ trigger: "hover" });
+		
+		$("#tsbtn").click(function(){window.open('https://christinabejjani.github.io/teachingstatement.html');});
+		
+		$("#tpbtn").click(function(){window.open('https://christinabejjani.github.io/teachingportfolio.html');});
 
 		//from: https://www.codeply.com/go/s3I9ivCBYH/bootstrap-4-responsive-carousel-one-at-a-time
 		$('#teachCarousel').on('slide.bs.carousel', function (e) {
