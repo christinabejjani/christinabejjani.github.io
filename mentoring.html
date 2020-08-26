@@ -115,7 +115,7 @@
 				<div class="card card-img-top mb-3">
 					<div class="card-body">
 						<div class="row align-items-center">
-							<div style="margin: 0 auto; position: relative; float: none; clear: both;"><iframe width="560" height="315" src="https://www.youtube.com/embed/OXDZJ5q1UxQ" frameborder="0"></iframe></div>
+							<div style="margin: 0 auto; position: relative; float: none; clear: both;"><iframe class="embed-responsive-item" src="https://www.youtube.com/embed/OXDZJ5q1UxQ"></iframe></div>
 						</div>
 						<div class="card-body">
 							<h2 class="d-sm-block d-md-block display-6" style="font-family: Playfair Display SC, serif; padding-bottom: 0.75rem">Mentoring Philosophy</h2>
@@ -226,15 +226,6 @@
 			}
 		});
 
-		checkSize();
-		
-		function checkSize(){
-			var w = window.innerWidth;
-			if (w < 600){
-			$('#iframe').addClass('embed-responsive-item');
-			$('#iframe').removeAttr( 'style' );}
-
-	});
 	</script>
 </body>
 </html>
