@@ -1,9 +1,5 @@
 .nav-pad{padding-top:1rem!important; padding-bottom:5rem!important; justify-content: center;}
 
-.question .nav-link.collapsed::after {
-    content: 'see publications';
-}
-
-.question .nav-link:not(.collapsed)::after {
-    content: 'hide publications';
+.collapse.show .fas {
+    color: #B8367E;
 }
