@@ -80,8 +80,8 @@
 									<a class="nav-link dropdown active" href="research.html" role="button" aria-haspopup="true" aria-expanded="false" aria-labelledby="researchdropdown">Research</a>
 									<ul class="dropdown-menu other-menu">
 									<span class="dropdown-menu-arrow"></span>
-										<li><a href="researchsummary.html" class="nav-link-child" tabindex="-1">Summary</a></li>
-										<li><a href="publications.html" class="nav-link-child" tabindex="-1">Publications</a></li>
+										<li><a href="researchsummary.html" target="_self" class="nav-link-child" tabindex="-1">Summary</a></li>
+										<li><a href="publications.html" target="_self" ="nav-link-child" tabindex="-1">Publications</a></li>
 									</ul>
 								</li>
 							</div>
@@ -90,8 +90,8 @@
 									<a class="nav-link dropdown" href="teaching.html" role="button" aria-haspopup="true" aria-expanded="false" aria-labelledby="teachingdropdown">Teaching</a>
 									<ul class="dropdown-menu other-menu">
 									<span class="dropdown-menu-arrow"></span>
-										<li><a href="teachingstatement.html" class="nav-link-child" tabindex="-1">Philosophy</a></li>
-										<li><a href="teachingportfolio.html" class="nav-link-child" tabindex="-1">Portfolio</a></li>
+										<li><a href="teachingstatement.html" target="_self" class="nav-link-child" tabindex="-1">Philosophy</a></li>
+										<li><a href="teachingportfolio.html" target="_self" class="nav-link-child" tabindex="-1">Portfolio</a></li>
 									</ul>
 								</li>
 							</div>
@@ -100,8 +100,8 @@
 									<a class="nav-link dropdown" href="diversity.html" role="button" aria-haspopup="true" aria-expanded="false" aria-labelledby="diversitydropdown">Diversity</a>
 									<ul class="dropdown-menu other-menu">
 									<span class="dropdown-menu-arrow"></span>
-										<li><a href="diversitystatement.html" class="nav-link-child" tabindex="-1">Philosophy</a></li>
-										<li><a href="diversityresources.html" class="nav-link-child" tabindex="-1">Portfolio</a></li>
+										<li><a href="diversitystatement.html" target="_self" class="nav-link-child" tabindex="-1">Philosophy</a></li>
+										<li><a href="diversityresources.html" target="_self" class="nav-link-child" tabindex="-1">Portfolio</a></li>
 									</ul>
 								</li>
 							</div>
@@ -110,8 +110,8 @@
 									<a class="nav-link dropdown" href="mentoring.html" role="button" aria-haspopup="true" aria-expanded="false" aria-labelledby="mentoringdropdown">Mentoring</a>
 									<ul class="dropdown-menu mentoring-menu">
 									<span class="dropdown-menu-arrow"></span>
-										<li><a href="mentoringstatement.html" class="nav-link-child" tabindex="-1">Philosophy</a></li>
-										<li><a href="mentoringportfolio.html" class="nav-link-child" tabindex="-1">Portfolio</a></li>
+										<li><a href="mentoringstatement.html" target="_self" class="nav-link-child" tabindex="-1">Philosophy</a></li>
+										<li><a href="mentoringportfolio.html" target="_self" class="nav-link-child" tabindex="-1">Portfolio</a></li>
 									</ul>
 								</li>
 							</div>
@@ -120,8 +120,8 @@
 									<a class="nav-link dropdown" href="applied.html" role="button" aria-haspopup="true" aria-expanded="false" aria-labelledby="applieddropdown">Applied</a>
 									<ul class="dropdown-menu applied-menu">
 									<span class="dropdown-menu-arrow"></span>
-										<li><a href="files/BejjaniResume.pdf" class="nav-link-child" tabindex="-1">Resume</a></li>									
-										<li><a href="appliedresearch.html" class="nav-link-child" tabindex="-1">Portfolio</a></li>
+										<li><a href="files/BejjaniResume.pdf" target="_self" class="nav-link-child" tabindex="-1">Resume</a></li>									
+										<li><a href="appliedresearch.html" target="_self" class="nav-link-child" tabindex="-1">Portfolio</a></li>
 									</ul>
 								</li>
 							</div>
@@ -219,16 +219,6 @@
         });
 		
 		$('[rel=tooltip]').tooltip({ trigger: "hover" });
-		
-		$("#researchdropdown").click(function(){window.open('https://christinabejjani.github.io/research.html', '_self');});
-		
-		$("#teachingdropdown").click(function(){window.open('https://christinabejjani.github.io/teaching.html', '_self');});
-		
-		$("#diversitydropdown").click(function(){window.open('https://christinabejjani.github.io/diversity.html', '_self');});
-		
-		$("#mentoringdropdown").click(function(){window.open('https://christinabejjani.github.io/mentoring.html', '_self');});
-		
-		$("#applieddropdown").click(function(){window.open('https://christinabejjani.github.io/applied.html', '_self');});
 		
 		$("#rsbtn").click(function(){window.open('https://christinabejjani.github.io/researchsummary.html', '_self');});
 		
