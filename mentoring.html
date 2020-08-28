@@ -52,26 +52,27 @@
 	  <div class="container h-100">
 		<div class="row h-100 align-items-center">
 		  <div class="col-12 text-center">
-			<h1 class="display-4" style="font-family: Playfair Display SC; color: white">Mentoring</h1>
-			<p class="lead display-6" style="font-family: Open Sans; color: white">Philosophy and Portfolio</p>
+			<h1 class="display-4 headfont white">Mentoring</h1>
+			<p class="lead display-6 mainfont white">Philosophy and Portfolio</p>
 		  </div>
 		</div>
 	  </div>
 	</header>
 	<section class="py-5">
 		<div class="container">
-			<nav class="navbar-nav navbar-expand-lg nav-pad" role = "navigation">
-				<div style="font-family: Playfair Display SC">
-					<div class="navbar-header d-sm-block d-md-block d-lg-none">
+			<nav class="navbar-nav navbar-expand-md nav-pad headfont" role = "navigation">
+					<div class="navbar-header d-sm-block d-md-none">
 						<button type = "button" class = "navbar-toggle" data-toggle = "collapse" data-target = "#navbar-collapse" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
 							<span class="navbar-toggler-icon">
-								<i class="fas fa-bars" style="color: #367eb8"></i>
+								<i class="fas fa-bars"></i>
 							</span>
 						</button>
 					</div>
+					
+					<div class="collapse navbar-collapse"></div> <!--to make the navbar centered without adding extra css -->
 										
 					<div class="collapse navbar-collapse" id="navbar-collapse">
-						<ul class="navbar-nav ml-auto topnav" role="navigation">
+						<ul class="navbar-nav mr-auto topnav" role="navigation">
 							<li class="nav-item">
 								<a class="nav-link" target="_self" href="index.html">About</a>
 							</li>
@@ -127,21 +128,19 @@
 							</div>
 						</ul>
 					</div>
-				</div>
 			</nav>
-			<blockquote class="blockquote mb-0" style="font-family: Abhaya Libre"><p>Christina Bejjani embodies the most generous and tireless spirit of mentorship I have ever encountered. She simply lives for this stuff...</p>
-			<footer class="blockquote-footer" style="font-family: Open Sans; padding-bottom: 1rem">Excerpt from my nominations for the <a class="copy-link" href="https://gradschool.duke.edu/about/news/2020-dean-s-awards-christina-bejjani" target="_blank" rel="noopener">2020 Dean's Award for Excellence Mentoring</a></footer></blockquote>
+			<blockquote class="blockquote mb-0 quotefont"><p>Christina Bejjani embodies the most generous and tireless spirit of mentorship I have ever encountered. She simply lives for this stuff...</p>
+			<footer class="blockquote-footer mainfont" style="padding-bottom: 1rem">Excerpt from my nominations for the <a class="copy-link" href="https://gradschool.duke.edu/about/news/2020-dean-s-awards-christina-bejjani" rel="noopener">2020 Dean's Award for Excellence Mentoring</a></footer></blockquote>
 			<hr>
-			<div style="font-family: Open Sans">
 				<div class="card card-img-top mb-3">
 					<div class="card-body">
 						<div class="row align-items-center">
 							<div style="margin: 0 auto; position: relative; float: none; clear: both;"><iframe class="embed-responsive-item YTvideo" src="https://www.youtube.com/embed/OXDZJ5q1UxQ" Set-Cookie: SameSite: None; SameSite: Secure;></iframe></div>
 						</div>
 						<div class="card-body">
-							<h2 class="d-sm-block d-md-block display-6" style="font-family: Playfair Display SC, serif; padding-bottom: 0.75rem">Mentoring Philosophy</h2>
-							<p class="card-text">"As psychologists and neuroscientists, we must grow our mentorship skills across our research, teaching, and service to foster our own professional development. Mentorship has always been an important part of my career trajectory. ..."</p>
-							<button id="msbtn" class="bttn link dim pv2 white bg-green">Read more</button>
+							<h2 class="d-sm-block d-md-block display-6 headfont" style="padding-bottom: 0.75rem">Mentoring Philosophy</h2>
+							<p class="card-text mainfont">"As psychologists and neuroscientists, we must grow our mentorship skills across our research, teaching, and service to foster our own professional development. Mentorship has always been an important part of my career trajectory. ..."</p>
+							<button id="msbtn" class="bttn link dim pv2 white bg-green mainfont">Read more</button>
 						</div>
 					</div>
 				</div>
@@ -177,19 +176,18 @@
 								</a>
 							</div>
 							<div class="card-body">
-								<h2 class="d-sm-block d-md-block display-6" style="font-family: Playfair Display SC, serif; padding-bottom: 0.75rem">Mentoring Portfolio</h2>
-								<p class="card-text">I have (co-)mentored eleven research assistants and many students, completed additional professional development workshops, been selected for and started various programs aimed at building inclusive environments that support the success of all learners...</p>
-								<button id="mpbtn" class="bttn link dim pv2 white bg-green">Read more</button>
+								<h2 class="d-sm-block d-md-block display-6 headfont" style="padding-bottom: 0.75rem">Mentoring Portfolio</h2>
+								<p class="card-text mainfont">I have (co-)mentored eleven research assistants and many students, completed additional professional development workshops, been selected for and started various programs aimed at building inclusive environments that support the success of all learners...</p>
+								<button id="mpbtn" class="bttn link dim pv2 white bg-green mainfont">Read more</button>
 							</div>
 						</div>
 					</div>
 				</div>
-			<div style="float: right" id="top-scroll">
+			<div class="scrollstyle mainfont" id="top-scroll">
 				<a class="copy-link" href="#top" rel="tooltip" data-toggle="tooltip" data-placement="bottom" title="Scroll to top">
 					<i class="fas fa-angle-up fa-2x"></i>
 				</a>
 			</div>
-		</div>
 	</section>
     
     <!-- Bootstrap core JavaScript-->
