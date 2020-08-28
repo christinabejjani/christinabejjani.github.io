@@ -2,6 +2,7 @@
 .mainfont {font-family: "Open Sans";}
 .quotefont {font-family: "Abhaya Libre";}
 .fa-bars {color: #367eb8;}
+.fa-asterisk {padding-left:0.75rem; padding-right:0.75rem;color:gray;}
 
 .scrollstyle {
   padding-top: 2rem;
