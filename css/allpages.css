@@ -1,10 +1,6 @@
-.headfont {
-  font-family: "Playfair Display SC";
-}
-
-.mainfont {
-  font-family: "Open Sans";
-}
+.headfont {font-family: "Playfair Display SC";}
+.mainfont {font-family: "Open Sans";}
+.fa-bars {color: #367eb8;}
 
 .scrollstyle {
   padding-top: 2rem;
@@ -33,13 +29,8 @@
 .navbar .dropdown-toggle {
   margin-bottom: 0;
 }
-.nav-link-child, .nav-link-child:hover {
-  color: white;
-}
-/*.topnav .nav-link.active,
-.topnav .show > .nav-link {
-    border-bottom: 0.2em solid #367eb8;
-} this is here if I want to make the underline continue to show*/
+.nav-link-child, .nav-link-child:hover {color: white;}
+
 .dropdown-menu-arrow {
   top: -25px;
   right: auto;
@@ -62,16 +53,10 @@
   right: -8px;
   border-bottom-color: #367eb8;
 }
-.applied-menu{
-  right: 50%;
-  left: -50%;
-}
-.mentoring-menu{
-  left: -20%;
-}
-.other-menu{
-  left: -25%; 
-}
+.applied-menu{right: 50%; left: -50%;}
+.mentoring-menu{left: -20%;}
+.other-menu{left: -25%;}
+
 .dropdown-menu{
   display: none;
   top: 3.5em;
@@ -90,7 +75,7 @@
 
 .nav-pad{padding-top:1rem!important; padding-bottom:5rem!important;}
 
-.fa-li, .fas, .fa-angle-up{color:#36B870}
+.fa-li, .fa-angle-up{color:#36B870}
 
 .masthead {
   height: 25vh;
