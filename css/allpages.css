@@ -6,6 +6,11 @@
   font-family: "Open Sans";
 }
 
+.scrollstyle{
+  padding-top: 2rem;
+  float: right;
+}
+
 .copy-link, .copy-link:link {
   color: #367eb8;
   text-decoration: none;
