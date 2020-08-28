@@ -70,7 +70,7 @@
           border-radius: 0 !important;
 }
 
-.dropdown:hover .dropdown-menu {display: block;}
+.dropdown:hover .dropdown-menu, .dropdown:focus .dropdown-menu, .dropdown:visited .dropdown-menu {display: block;}
 
 /*.nav-pad{padding-top:2rem!important}
 .nav-pad{padding-bottom:4rem!important}*/
@@ -87,7 +87,7 @@
   background-position: center;
   background-repeat: no-repeat;
 }
-.bttn {text-align: center; border-radius: 2px; border: none; outline:none}
+.bttn {text-align: center; border-radius: 2rem; border: none; outline:none}
 .dim{opacity:1}
 .dim,.dim:focus,.dim:hover{transition:opacity .15s ease-in}
 .dim:focus,.dim:hover{opacity:.5}
