@@ -1,3 +1,11 @@
+.headfont {
+  font-family: "Playfair Display SC";
+}
+
+.mainfont {
+  font-family: "Open Sans";
+}
+
 .copy-link, .copy-link:link {
   color: #367eb8;
   text-decoration: none;
