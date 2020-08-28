@@ -1,32 +1,52 @@
-
 <!doctype html>
 <html lang="en">
-
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no">
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<!--commenting out until I get my layout to how I want it    
-    <meta name="description" content="Personal website for Christina Bejjani">
-    <meta name="keywords" content="Psychology, Learning, Memory, Attention, Christina Bejjani, C. Bejjani">
-    <meta name="author" content="Christina Bejjani"> -->
+	<base target='_blank'/> <!--will make each link default open in new tab; probably best for portfolio pages-->
+    <meta charset="utf-8"/>
+	<meta name="google-site-verification" content="Hl1D8Wi_Na9rBhnPm51m6rstMdR3t3WR38vQS9t1keo" /><!--verifying site for the purpose of google-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no"/><!--viewport is user's visible area of web page-->
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>    
+    <meta name="description" content="Personal website for Christina Bejjani"/><!--To increase SEO, add description, keywords, author, etc. -->
+    <meta name="keywords" content="Psychology, Learning, Memory, Attention, Christina Bejjani, C. Bejjani"/>
+    <meta name="author" content="Christina Bejjani"/> 
+	<meta property='og:url' content='https://christinabejjani.github.io/'/><!--This is for the open graph framework, which sites like Facebook, Twitter, LinkedIn etc. use, esp when the site URL is shared -->
+	<meta property='og:title' content='Christina Bejjani, PhD Candidate at Duke University'/>
+	<meta property='og:description' content='I am a cognitive scientist dedicated to answering questions about human behavior with methodological and analytical rigor, promoting an inclusive community that grows potential for all learners, and learning new skills.'/>
+	<meta property='og:image' content='files/dukechapel.jpg'/>
+	<meta property='og:type' content='website'/>
+	<meta name='twitter:card' content='summary'/><!--This is for those little thumbnails when the link is shared on twitter -->
+	<meta name='twitter:url' content='https://christinabejjani.github.io/'/>
+	<meta name='twitter:image' content='files/dukechapel.jpg'/>
+	<meta name='twitter:description' content='I am a cognitive scientist dedicated to answering questions about human behavior with methodological and analytical rigor, promoting an inclusive community that grows potential for all learners, and learning new skills.'/>
+	<meta name='twitter:title' content='Christina Bejjani, PhD Candidate at Duke University'/>
 	
-    <link href="files/favi_icon_website2.png" rel="icon" type="image/x-icon" />
+    <link href="files/favi_icon_website2.png" rel="icon" type="image/x-icon" /> <!--favicon for the browser -->
+	<link href='https://christinabejjani.github.io/' rel='canonical'/> <!--rel canonical is a way of defining canonical page for similar or duplicate pages -->
+	<link rel="me" href="https://christinabejjani.github.io/" /><!--by defining rel me, i'm saying i own this site -->
 	
     <title>Christina Bejjani</title>
-
-    <!-- Bootstrap core CSS + font awesome JS just for the nav bar collapsible icon-->
+	
+    <!-- Bootstrap core CSS + font awesome JS for icons-->
     <link href="css/bootstrap.min.css" rel="stylesheet">
 	<script src="https://kit.fontawesome.com/25e7f7a6fa.js" crossorigin="anonymous"></script>
 	
 	<!-- Custom CSS -->
 	<link href="css/allpages.css" rel="stylesheet">
 	<link href="css/research.css" rel="stylesheet">
+	
+	<!-- Loading fonts; pairing serif fonts in headers w/ sans serif for body-->
+	<link href="https://fonts.googleapis.com/css?family=Abhaya+Libre|Open+Sans|Playfair+Display+SC&display=swap" rel="stylesheet">
+	
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-176734925-1"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
 
-	<!-- Loading fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Bebas+Neue|Cinzel|Lato|Merriweather|Noto+Sans|Open+Sans|Playfair+Display+SC|Poiret+One|Prata|Raleway|Roboto|Roboto+Condensed|Sarabun|Tinos|Vidaloka&display=swap" rel="stylesheet">
+	  gtag('config', 'UA-176734925-1');
+	</script>
 </head>
-
 <body>
 	<header class="masthead">
 	  <div class="container h-100">
@@ -53,55 +73,55 @@
 					<div class="collapse navbar-collapse" id="navbar-collapse">
 						<ul class="navbar-nav ml-auto topnav" role="navigation">
 							<li class="nav-item">
-								<a class="nav-link" href="index.html">About<span class="sr-only">(current)</span></a>
+								<a class="nav-link" target="_self" href="index.html">About</a>
 							</li>
 							<div id = "researchdropdown">
 								<li class="dropdown">
-									<a class="nav-link dropdown active" href="research.html" role="button" aria-haspopup="true" aria-expanded="false" aria-labelledby="researchdropdown">Research</a>
+									<a class="nav-link dropdown active" href="research.html" target="_self" role="button" aria-haspopup="true" aria-expanded="false" aria-labelledby="researchdropdown">Research</a>
 									<ul class="dropdown-menu other-menu">
 									<span class="dropdown-menu-arrow"></span>
-										<li><a href="researchsummary.html" class="nav-link-child" tabindex="-1">Summary</a></li>
-										<li><a href="publications.html" class="nav-link-child" tabindex="-1">Publications</a></li>
+										<li><a href="researchsummary.html" target="_self" class="nav-link-child" tabindex="-1">Summary</a></li>
+										<li><a href="publications.html" target="_self" class="nav-link-child" tabindex="-1">Publications<span class="sr-only">(current)</span></a></li>
 									</ul>
 								</li>
 							</div>
 							<div id = "teachingdropdown">
 								<li class="dropdown">
-									<a class="nav-link dropdown" href="teaching.html" role="button" aria-haspopup="true" aria-expanded="false" aria-labelledby="teachingdropdown">Teaching</a>
+									<a class="nav-link dropdown" href="teaching.html" target="_self" role="button" aria-haspopup="true" aria-expanded="false" aria-labelledby="teachingdropdown">Teaching</a>
 									<ul class="dropdown-menu other-menu">
 									<span class="dropdown-menu-arrow"></span>
-										<li><a href="teachingstatement.html" class="nav-link-child" tabindex="-1">Philosophy</a></li>
-										<li><a href="teachingportfolio.html" class="nav-link-child" tabindex="-1">Portfolio</a></li>
+										<li><a href="teachingstatement.html" target="_self" class="nav-link-child" tabindex="-1">Philosophy</a></li>
+										<li><a href="teachingportfolio.html" target="_self" class="nav-link-child" tabindex="-1">Portfolio</a></li>
 									</ul>
 								</li>
 							</div>
 							<div id = "diversitydropdown">
 								<li class="dropdown">
-									<a class="nav-link dropdown" href="diversity.html" role="button" aria-haspopup="true" aria-expanded="false" aria-labelledby="diversitydropdown">Diversity</a>
+									<a class="nav-link dropdown" href="diversity.html" target="_self" role="button" aria-haspopup="true" aria-expanded="false" aria-labelledby="diversitydropdown">Diversity</a>
 									<ul class="dropdown-menu other-menu">
 									<span class="dropdown-menu-arrow"></span>
-										<li><a href="diversitystatement.html" class="nav-link-child" tabindex="-1">Philosophy</a></li>
-										<li><a href="diversityresources.html" class="nav-link-child" tabindex="-1">Portfolio</a></li>
+										<li><a href="diversitystatement.html" target="_self" class="nav-link-child" tabindex="-1">Philosophy</a></li>
+										<li><a href="diversityresources.html" target="_self" class="nav-link-child" tabindex="-1">Portfolio</a></li>
 									</ul>
 								</li>
 							</div>
 							<div id = "mentoringdropdown">
 								<li class="dropdown">
-									<a class="nav-link dropdown" href="mentoring.html" role="button" aria-haspopup="true" aria-expanded="false" aria-labelledby="mentoringdropdown">Mentoring</a>
+									<a class="nav-link dropdown" href="mentoring.html" target="_self" role="button" aria-haspopup="true" aria-expanded="false" aria-labelledby="mentoringdropdown">Mentoring</a>
 									<ul class="dropdown-menu mentoring-menu">
 									<span class="dropdown-menu-arrow"></span>
-										<li><a href="mentoringstatement.html" class="nav-link-child" tabindex="-1">Philosophy</a></li>
-										<li><a href="mentoringportfolio.html" class="nav-link-child" tabindex="-1">Portfolio</a></li>
+										<li><a href="mentoringstatement.html" target="_self" class="nav-link-child" tabindex="-1">Philosophy</a></li>
+										<li><a href="mentoringportfolio.html" target="_self" class="nav-link-child" tabindex="-1">Portfolio</a></li>
 									</ul>
 								</li>
 							</div>
 							<div id = "applieddropdown">
 								<li class="dropdown">
-									<a class="nav-link dropdown" href="applied.html" role="button" aria-haspopup="true" aria-expanded="false" aria-labelledby="applieddropdown">Applied</a>
+									<a class="nav-link dropdown" href="applied.html" target="_self" role="button" aria-haspopup="true" aria-expanded="false" aria-labelledby="applieddropdown">Applied</a>
 									<ul class="dropdown-menu applied-menu">
 									<span class="dropdown-menu-arrow"></span>
-										<li><a href="files/BejjaniResume.pdf" class="nav-link-child" tabindex="-1">Resume</a></li>									
-										<li><a href="appliedresearch.html" class="nav-link-child" tabindex="-1">Portfolio</a></li>
+										<li><a href="files/BejjaniResume.pdf" target="_self" class="nav-link-child" tabindex="-1">Resume</a></li>									
+										<li><a href="appliedresearch.html" target="_self" class="nav-link-child" tabindex="-1">Portfolio</a></li>
 									</ul>
 								</li>
 							</div>
@@ -155,7 +175,7 @@
 						<li><i class="fa-li fas fa-brain"></i><strong>Bejjani, C.</strong>**, Siqi-Liu, A.**, and Egner, T. (in preparation for <i>Journal of Experimental Psychology: Human Perception and Performance</i>). Minimal impact of consolidation on learned switch readiness.</li>
 					</ul>
 				<p>You can view my summary of my <a href="researchsummary.html" target="_self" class="copy-link">three broad research areas here.</a></p>
-				</div>
+			</div>
 			<div style="float: right" id="top-scroll">
 				<a class="copy-link" href="#top" rel="tooltip" data-toggle="tooltip" data-placement="bottom" title="Scroll to top">
 					<i class="fas fa-angle-up fa-2x"></i>
@@ -180,17 +200,6 @@
 		});
 			
 		$('[rel=tooltip]').tooltip({ trigger: "hover" });
-		
-		$("#researchdropdown").click(function(){window.open('https://christinabejjani.github.io/research.html', '_self');});
-		
-		$("#teachingdropdown").click(function(){window.open('https://christinabejjani.github.io/teaching.html', '_self');});
-		
-		$("#diversitydropdown").click(function(){window.open('https://christinabejjani.github.io/diversity.html', '_self');});
-		
-		$("#mentoringdropdown").click(function(){window.open('https://christinabejjani.github.io/mentoring.html', '_self');});
-		
-		$("#applieddropdown").click(function(){window.open('https://christinabejjani.github.io/applied.html', '_self');});
-
 
 	});
 	</script>
