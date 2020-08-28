@@ -72,5 +72,4 @@ a.svg {
     background-color: #1DA1F2;
 }
 
-.nav-pad{padding-top:2rem!important}
-.nav-pad{padding-bottom:4rem!important}
+.nav-pad{padding-top:2rem!important; padding-bottom:4rem!important; float: left;}
