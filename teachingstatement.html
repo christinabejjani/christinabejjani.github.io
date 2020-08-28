@@ -132,9 +132,9 @@
 			<div class="jumbotron" style="padding: 15px">
 				<h2 class="d-sm-block d-md-block display-6" style="font-family: Playfair Display SC, serif; padding-bottom: 0.75rem">Teaching Philosophy</h2>
 				<div class="btn-group" role="group" aria-label="teaching button group">
-					<button id="tspdfbtn" class="bttn link dim pv2 white bg-green">View statement PDF</button>
+					<button id="tspdfbtn" class="bttn link dim pv2 white bg-green">View philosophy as a PDF</button>
 					<i class="fas fa-asterisk" style="padding-left:0.75rem; padding-right:0.75rem;color:gray;" aria-hidden="true"></i>
-					<button id="tsportbtn" class="bttn link dim pv2 white bg-green" href="teachingportfolio.html" target="_self">View my portfolio</button>
+					<button id="tportbtn" class="bttn link dim pv2 white bg-green">View my portfolio</button>
 				</div>
 				<p class="lead" style="font-family: Open Sans, sans-serif; font-weight: lighter; padding-top: 1.25rem">This is where I should put a quick comment on what I believe.</p>
 			</div>
@@ -195,9 +195,9 @@
 	<script type="text/javascript">
 	$(document).ready(function(){
 
-		$("#tspdfbtn").click(function(){
-			window.open('https://christinabejjani.github.io/files/BejjaniTeachingPhilosophy.pdf');
-		});
+		$("#tspdfbtn").click(function(){window.open('https://christinabejjani.github.io/files/BejjaniTeachingPhilosophy.pdf');});
+		
+		$("#tportbtn").click(function(){window.open('https://christinabejjani.github.io/teachingportfolio.html','_self');});
 
 		$("a[href='#top']").click(function() {
 			$('html,body').animate({scrollTop: 0}, "slow");

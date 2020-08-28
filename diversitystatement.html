@@ -131,7 +131,11 @@
 			</nav>
 			<div class="jumbotron" style="padding: 15px">
 				<h2 class="d-sm-block d-md-block display-6" style="font-family: Playfair Display SC, serif; padding-bottom: 0.75rem">Diversity Philosophy</h2>
-				<button id="dyn-bttn" class="bttn link dim pv2 white bg-green" style="font-family: Open Sans, sans-serif"><font color="white">View my philosophy as a PDF</font></button>
+				<div class="btn-group" role="group" aria-label="teaching button group">
+					<button id="dspdfbtn" class="bttn link dim pv2 white bg-green">View philosophy as a PDF</button>
+					<i class="fas fa-asterisk" style="padding-left:0.75rem; padding-right:0.75rem;color:gray;" aria-hidden="true"></i>
+					<button id="dportbtn" class="bttn link dim pv2 white bg-green">View my portfolio</button>
+				</div>
 				<p class="lead" style="font-family: Open Sans, sans-serif; font-weight: lighter; padding-top: 1.25rem">This is where I should put a quick comment on what I believe.</p>
 			</div>
 				<div class="row justify-content-start" style="font-family: Open Sans, sans-serif; font-weight: regular; padding: 15px">
@@ -161,7 +165,7 @@
 								
 								</div>
 				
-			<div style="float: right" id="top-scroll">
+			<div class="scrollstyle" id="top-scroll">
 				<a class="copy-link" href="#top" rel="tooltip" data-toggle="tooltip" data-placement="bottom" title="Scroll to top">
 					<i class="fas fa-angle-up fa-2x"></i>
 				</a>
@@ -178,10 +182,10 @@
 	
 	<script type="text/javascript">
 	$(document).ready(function(){
-
-		$("#dyn-bttn").click(function(){
-			window.open('https://christinabejjani.github.io/files/BejjaniDiversityPhilosophy.pdf','_blank');
-		});
+		
+		$("#dspdfbtn").click(function(){window.open('https://christinabejjani.github.io/files/BejjaniDiversityPhilosophy.pdf');});
+		
+		$("#dportbtn").click(function(){window.open('https://christinabejjani.github.io/diversityportfolio.html','_self');});
 
 		$("a[href='#top']").click(function() {
 			$('html,body').animate({scrollTop: 0}, "slow");
