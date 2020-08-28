@@ -1,5 +1,3 @@
-.nav-pad{padding-top:1rem!important; padding-bottom:5rem!important; justify-content: center;}
-
 .copy-link, .copy-link:link {
   color: #367eb8;
   text-decoration: none;
@@ -86,6 +84,9 @@
 }
 
 .dropdown:hover .dropdown-menu {display: block;}
+
+.nav-pad{padding-top:2rem!important}
+.nav-pad{padding-bottom:4rem!important}
 
 .fa-li, .fas, .fa-angle-up{color:#36B870}
 
