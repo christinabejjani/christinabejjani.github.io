@@ -1,10 +1,10 @@
 <!doctype html>
 <html lang="en">
 <head>
-	<!--<base target='_blank'/> will make each link automatically open in new tab; probably best for portfolio pages-->
+	<base target='_blank'/> <!--will make each link default open in new tab; probably best for portfolio pages-->
     <meta charset="utf-8"/>
-	<meta name="google-site-verification" content="Hl1D8Wi_Na9rBhnPm51m6rstMdR3t3WR38vQS9t1keo" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no"/><!-- -->
+	<meta name="google-site-verification" content="Hl1D8Wi_Na9rBhnPm51m6rstMdR3t3WR38vQS9t1keo" /><!--verifying site for the purpose of google-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no"/><!--viewport is user's visible area of web page-->
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>    
     <meta name="description" content="Personal website for Christina Bejjani"/><!--To increase SEO, add description, keywords, author, etc. -->
     <meta name="keywords" content="Psychology, Learning, Memory, Attention, Christina Bejjani, C. Bejjani"/>
@@ -34,7 +34,7 @@
 	<link href="css/allpages.css" rel="stylesheet">
 	<link href="css/about.css" rel="stylesheet">
 	
-	<!-- Loading fonts; In theory I only use Abhaya Libre, Open Sans, and Playfair Display SC -->
+	<!-- Loading fonts; pairing serif fonts in headers w/ sans serif for body-->
 	<link href="https://fonts.googleapis.com/css?family=Abhaya+Libre|Open+Sans|Playfair+Display+SC&display=swap" rel="stylesheet">
 	
 	<!-- Global site tag (gtag.js) - Google Analytics -->
@@ -48,17 +48,16 @@
 	</script>
 </head>
 <body>
-		<div class="container-fluid"><!--Containers provide a means to center and horizontally pad your site’s contents. Use .container for a responsive pixel width or .container-fluid for width: 100% across all viewport and device sizes.-->
-			<div class="row no-gutter"><!--Rows are wrappers for columns. Each column has horizontal padding (called a gutter) for controlling the space between them. Here, get rid of the space between columns-->
+		<div class="container-fluid"><!--Containers allow you to center and horizontally pad your site’s contents & container-fluid has width: 100% across all viewport and device sizes.-->
+			<div class="row no-gutter"><!--Rows are wrappers for columns, which have horizontal padding (called a gutter) for controlling the space between them. Here, get rid of the space between columns-->
 			
-				<div class="d-none d-flex col-md-1"></div>
-				<div class="d-none d-xl-flex col-md-3 col-lg-4 bg-image image"></div> <!--d-none means display none (hidden on most devices), but flex ... col-md-4 indicates max container width of 720px, with 4 of them; col-lg-6 indicates max width of 960 px, with 6 of them; bg-image and image are special cs classes telling the background image to "cover" (fill size) and load at 100% vertical height-->
-				<div class="col-md-9 col-lg-9 col-xl-7"> <!-- col-md-8 indicates 8 columns of < 720 px, col-lg-6 indicates < 960 px-->
+				<div class="d-none d-flex col-md-1"></div><!--I added a md-1 flex column that doesn't show so that there would be a space next to the image of me (rather than have me take up half the screen)-->
+				<div class="d-none d-xl-flex col-md-3 col-lg-4 bg-image image"></div> <!--d-none means display none (hidden on most devices); xl-flex means this class will resize to fit screen on xl browsers, but less than xl, the image/bg-image won't show. col-md-3 indicates max container width of 720px, with 3 of them; col-lg-4 indicates max width of 960 px, with 4 of them; bg-image and image are special cs classes telling the background image to "cover" (fill size) and load at 100% vertical height-->
+				<div class="col-md-9 col-lg-9 col-xl-7"> <!-- col-md-9 indicates 9 columns of < 720 px, col-lg-9 indicates < 960 px-->
 			
-					<div class="d-flex align-items-center">
-						<div class="col-lg-9 mx-auto">
-							<nav class="navbar-nav navbar-expand-lg nav-pad" role = "navigation">
-								<div style="font-family: Playfair Display SC">
+					<div class="d-flex align-items-center"> <!--now w/in the column we've now created that's next to the md-column and background image, be flexible w/ item placement & align in center -->
+						<div class="col-lg-9 mx-auto"> <!--in bootstrap spacing, m means margin, x refers to left and right, so this sets auto margins to left and right for 9 columns of < 960 px -->
+							<nav class="navbar-nav navbar-expand-lg nav-pad headfont" role = "navigation"> <!-- -->
 									  <div class="navbar-header d-sm-block d-md-block d-lg-none">
 										  <button type = "button" class = "navbar-toggle" data-toggle = "collapse" data-target = "#navbar-collapse" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
 											 <span class="navbar-toggler-icon">
@@ -70,68 +69,66 @@
 										<div class="collapse navbar-collapse" id="navbar-collapse">
 										<ul class="navbar-nav ml-auto topnav" role="navigation">
 											<li class="nav-item">
-												<a class="nav-link active" href="index.html">About<span class="sr-only">(current)</span></a>
+												<a class="nav-link active" href="index.html" target="_self">About<span class="sr-only">(current)</span></a>
 											</li>
 											<div id = "researchdropdown">
 												<li class="dropdown">
-												<a class="nav-link dropdown" href="research.html" role="button" aria-haspopup="true" aria-expanded="false" aria-labelledby="researchdropdown">Research</a>
+												<a class="nav-link dropdown" href="research.html" target="_self" role="button" aria-haspopup="true" aria-expanded="false" aria-labelledby="researchdropdown">Research</a>
 												<ul class="dropdown-menu other-menu">
 													<span class="dropdown-menu-arrow"></span>
-													<li><a href="researchsummary.html" class="nav-link-child" tabindex="-1">Summary</a></li>
-													<li><a href="publications.html" class="nav-link-child" tabindex="-1">Publications</a></li>
+													<li><a href="researchsummary.html" target="_self" class="nav-link-child" tabindex="-1">Summary</a></li>
+													<li><a href="publications.html" target="_self" class="nav-link-child" tabindex="-1">Publications</a></li>
 												</ul>
 												</li>
 											</div>
 											<div id = "teachingdropdown">
 												<li class="dropdown">
-												<a class="nav-link dropdown" href="teaching.html" role="button" aria-haspopup="true" aria-expanded="false" aria-labelledby="teachingdropdown">Teaching</a>
+												<a class="nav-link dropdown" href="teaching.html" target="_self" role="button" aria-haspopup="true" aria-expanded="false" aria-labelledby="teachingdropdown">Teaching</a>
 												<ul class="dropdown-menu other-menu">
 													<span class="dropdown-menu-arrow"></span>
-													<li><a href="teachingstatement.html" class="nav-link-child" tabindex="-1">Philosophy</a></li>
-													<li><a href="teachingportfolio.html" class="nav-link-child" tabindex="-1">Portfolio</a></li>
+													<li><a href="teachingstatement.html" target="_self" class="nav-link-child" tabindex="-1">Philosophy</a></li>
+													<li><a href="teachingportfolio.html" target="_self" class="nav-link-child" tabindex="-1">Portfolio</a></li>
 												</ul>
 												</li>
 											</div>
 											<div id = "diversitydropdown">
 												<li class="dropdown">
-												<a class="nav-link dropdown" href="diversity.html" role="button" aria-haspopup="true" aria-expanded="false" aria-labelledby="diversitydropdown">Diversity</a>
+												<a class="nav-link dropdown" href="diversity.html" target="_self" role="button" aria-haspopup="true" aria-expanded="false" aria-labelledby="diversitydropdown">Diversity</a>
 												<ul class="dropdown-menu other-menu">
 													<span class="dropdown-menu-arrow"></span>
-													<li><a href="diversitystatement.html" class="nav-link-child" tabindex="-1">Philosophy</a></li>
-													<li><a href="diversityresources.html" class="nav-link-child" tabindex="-1">Portfolio</a></li>
+													<li><a href="diversitystatement.html" target="_self" class="nav-link-child" tabindex="-1">Philosophy</a></li>
+													<li><a href="diversityresources.html" target="_self" class="nav-link-child" tabindex="-1">Portfolio</a></li>
 												</ul>
 												</li>
 											</div>
 											<div id = "mentoringdropdown">
 												<li class="dropdown">
-												<a class="nav-link dropdown" href="mentoring.html" role="button" aria-haspopup="true" aria-expanded="false" aria-labelledby="mentoringdropdown">Mentoring</a>
+												<a class="nav-link dropdown" href="mentoring.html" target="_self" role="button" aria-haspopup="true" aria-expanded="false" aria-labelledby="mentoringdropdown">Mentoring</a>
 												<ul class="dropdown-menu mentoring-menu">
 													<span class="dropdown-menu-arrow"></span>
-													<li><a href="mentoringstatement.html" class="nav-link-child" tabindex="-1">Philosophy</a></li>
-													<li><a href="mentoringportfolio.html" class="nav-link-child" tabindex="-1">Portfolio</a></li>
+													<li><a href="mentoringstatement.html" target="_self" class="nav-link-child" tabindex="-1">Philosophy</a></li>
+													<li><a href="mentoringportfolio.html" target="_self" class="nav-link-child" tabindex="-1">Portfolio</a></li>
 												</ul>
 												</li>
 											</div>
 											<div id = "applieddropdown">
 												<li class="dropdown">
-												<a class="nav-link dropdown" href="applied.html" role="button" aria-haspopup="true" aria-expanded="false" aria-labelledby="applieddropdown">Applied</a>
+												<a class="nav-link dropdown" href="applied.html" target="_self" role="button" aria-haspopup="true" aria-expanded="false" aria-labelledby="applieddropdown">Applied</a>
 												<ul class="dropdown-menu applied-menu">
 													<span class="dropdown-menu-arrow"></span>
 													<li><a href="files/BejjaniResume.pdf" class="nav-link-child" tabindex="-1">Resume</a></li>									
-													<li><a href="appliedresearch.html" class="nav-link-child" tabindex="-1">Portfolio</a></li>
+													<li><a href="appliedresearch.html" target="_self" class="nav-link-child" tabindex="-1">Portfolio</a></li>
 												</ul>
 												</li>
 											</div>
 										</ul>
 										<hr>
 										</div>
-									</div>
-								</nav>					<!-- mx refers to spacing, making the inline-wrapping css work (flex-wrap moves it to the left), lg-8 refers to greater than 992px, md refers to greater than 778 px-->
-							<h1 class="d-none d-sm-none d-md-block display-4" style="font-family: Playfair Display SC">Christina Bejjani</h1><!--Hidden only on sm--->
-							<h1 class="d-sm-block d-md-none display-4" style="font-family: Playfair Display SC">C. Bejjani</h1> <!--Visible only on sm--->
-							<h4 class="display-6" style="font-family: Open Sans"><em>PhD candidate at Duke University </em></h4>
-							<div style="font-family: Open Sans">
-								<div class="row justify-content-start" style="padding: 15px">
+							</nav>					<!-- mx refers to spacing, making the inline-wrapping css work (flex-wrap moves it to the left), lg-8 refers to greater than 992px, md refers to greater than 778 px-->
+							<h1 class="d-none d-sm-none d-md-block display-4 headfont">Christina Bejjani</h1><!--Hidden only on sm--->
+							<h1 class="d-sm-block d-md-none display-4 headfont">C. Bejjani</h1> <!--Visible only on sm--->
+							<h4 class="display-6 mainfont"><em>PhD candidate at Duke University </em></h4>
+								<div class="row justify-content-start mainfont" style="padding: 15px">
 									<a class="svg" href="https://scholar.google.com/citations?user=WKNC9F8AAAAJ&hl=en&oi=ao" target="_blank" rel="noopener">
 										<svg class="icon icon-scholar" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 32 32" >
 											<title>Google Scholar</title>
@@ -186,15 +183,14 @@
 										</svg>
 									</a>
 								</div>
-							<p></p>
-							<p> I am a <b>cognitive scientist</b> dedicated to answering questions about human behavior with methodological and analytical <i>rigor</i>, promoting an <i>inclusive</i> community that grows potential for all learners, and <i>learning</i> new skills and frameworks. </p>
+							<div class="mainfont"><p> I am a <b>cognitive scientist</b> dedicated to answering questions about human behavior with methodological and analytical <i>rigor</i>, promoting an <i>inclusive</i> community that grows potential for all learners, and <i>learning</i> new skills and frameworks. </p>
 							<p>I earned a B.A. in neuroscience from <a href="https://www.pomona.edu/" target="_blank" rel="noopener" class="copy-link">Pomona College</a> in 2013 and worked as a <a href="http://rissmanlab.psych.ucla.edu/rissmanlab/Home.html" target="_blank" rel="noopener" class="copy-link">research assistant at UCLA</a> before becoming the lab manager for the <a href="http://tricomilab.wixsite.com/ldmlab/previous-people" target="_blank" rel="noopener" class="copy-link">Learning & Decision Making lab at Rutgers-Newark</a> in 2014. I joined <a href="http://www.egnerlab.org/people/" target="_blank" rel="noopener" class="copy-link">the Egner lab</a> at Duke University as a cognitive <a href="https://psychandneuro.duke.edu/" target="_blank" rel="noopener" class="copy-link">Psychology & Neuroscience</a> PhD student in 2016.</p>
 
 							<p>Broadly speaking, my research focuses on how we learn to adapt our attention in various scenarios and how to apply psychological research to better educational and mental health outcomes. Outside of lab, I like to read and write longer fiction works and make <a href="http://instagram.com/chbejjani" target="_blank" class="copy-link">Middle Eastern food</a>.</p>
 					
 							<p style="padding-bottom: 0.75rem">If you want to know how to pronounce my last name, you can click the Arabic "listen" button <a href="https://translate.google.com/?hl=en&tab=wT&authuser=0#view=home&op=translate&sl=auto&tl=en&text=%D9%83%D8%B1%D8%B3%D8%AA%D9%8A%D9%86%D8%A7%20%D8%A8%D8%AC%D9%91%D8%A7%D9%86%D9%8A" target="_blank" class="copy-link">here</a>.</p>
 						
-							<button id="dyn-bttn" class="bttn link dim pv2 white bg-green" style="font-family: Open Sans">View my academic CV</button>
+							<button id="dyn-bttn" class="bttn link dim pv2 white bg-green mainfont">View my academic CV</button>
 
 							</div>
 							
