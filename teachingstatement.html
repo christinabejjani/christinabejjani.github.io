@@ -131,7 +131,11 @@
 			</nav>
 			<div class="jumbotron" style="padding: 15px">
 				<h2 class="d-sm-block d-md-block display-6" style="font-family: Playfair Display SC, serif; padding-bottom: 0.75rem">Teaching Philosophy</h2>
-				<button id="dyn-bttn" class="bttn link dim pv2 white bg-green" style="font-family: Open Sans, sans-serif"><font color="white">View my philosophy as a PDF</font></button>
+				<div class="btn-group" role="group" aria-label="teaching button group">
+					<button id="tspdfbtn" class="bttn link dim pv2 white bg-green">View statement PDF</button>
+					<i class="fas fa-asterisk" style="padding-left:0.75rem; padding-right:0.75rem;color:gray;" aria-hidden="true"></i>
+					<button id="tsportbtn" class="bttn link dim pv2 white bg-green" href="teachingportfolio.html" target="_self">View my portfolio</button>
+				</div>
 				<p class="lead" style="font-family: Open Sans, sans-serif; font-weight: lighter; padding-top: 1.25rem">This is where I should put a quick comment on what I believe.</p>
 			</div>
 				<div class="row justify-content-start" style="font-family: Open Sans, sans-serif; font-weight: regular; padding: 15px">
@@ -173,7 +177,7 @@
 					<p>Learning, for students and teachers alike, does not end at the classroom doors. In order to fully engage their students, teachers must continually seek to improve themselves and adapt to the challenges posed by newer technology and changing societal demands. To this end, I have sought out specialized training. I am a scholar in the <a class="copy-link" href="https://gradschool.duke.edu/professional-development/programs/certificate-college-teaching" target="_blank" rel="noopener">Certificate in College Teaching</a> program, which trains students to become better college teachers through coursework, workshops, and peer-evaluated teaching, and hope to become a fellow in the <a class="copy-link" href="https://gradschool.duke.edu/professional-development/programs/preparing-future-faculty" target="_blank" rel="noopener">Preparing Future Faculty</a> program, which provides students with hands-on, institutional knowledge about the expectations and duties of new faculty. I am also working towards a <a class="copy-link" href="https://sites.duke.edu/widcertificate/wid-certificate/" target="_blank" rel="noopener">Certificate of Accomplishment in Teaching Writing in the Disciplines</a>, which trains teachers to help students develop writing skills across disciplines. Furthermore, I read higher education journals and blogs like the E<em>ducational Psychologist</em>, the <em>Teaching Professor</em> blog, and the <em>Chronicle of Higher Education</em> for ideas on how to improve my teaching, and plan to record my own classes so that I can refine my skills based on my observations as well as student feedback and peer observation of my teaching. Finally, I have attended workshops and forums (e.g., <a class="copy-link" href="https://gradschool.duke.edu/about/news/wise-graduate-school-explore-remedies-implicit-bias-stem" target="_blank" rel="noopener">How to Be an Ally</a>, <a class="copy-link" href="https://gradschool.duke.edu/student-life/events/rcr-forum-diversity-and-inclusion-classroom" target="_blank" rel="noopener">Diversity and Inclusion in the Classroom</a>, authored by me: <a class="copy-link" href="https://gradschool.duke.edu/professional-development/blog/becoming-better-teacher-trans-inclusive-pedagogy" target="_blank" rel="noopener">Becoming a Better Teacher: Trans* Inclusive Pedagogy</a>) that encourage the creation of safe spaces. When students feel safe, they engage with the material, ask questions, and learn more from their work. Extending beyond the classroom, learning is a culture that students and teachers alike can champion in their continuing development as scholars and critical thinkers.</p>
 				</div>
 				
-			<div style="float: right" id="top-scroll">
+			<div class="scrollstyle" id="top-scroll">
 				<a class="copy-link" href="#top" rel="tooltip" data-toggle="tooltip" data-placement="bottom" title="Scroll to top">
 					<i class="fas fa-angle-up fa-2x"></i>
 				</a>
@@ -191,8 +195,8 @@
 	<script type="text/javascript">
 	$(document).ready(function(){
 
-		$("#dyn-bttn").click(function(){
-			window.open('https://christinabejjani.github.io/files/BejjaniTeachingPhilosophy.pdf','_blank');
+		$("#tspdfbtn").click(function(){
+			window.open('https://christinabejjani.github.io/files/BejjaniTeachingPhilosophy.pdf');
 		});
 
 		$("a[href='#top']").click(function() {
