@@ -3,80 +3,62 @@
 .quotefont {font-family: "Abhaya Libre";}
 .fa-bars {color: #367eb8;}
 .fa-asterisk {padding-left:0.75rem; padding-right:0.75rem;color:gray;}
+.scrollstyle {padding-top: 2rem; float: right;}
+.copy-link, .copy-link:link {color: #367eb8; text-decoration: none;}
+.copy-link:hover, .copy-link:active, .copy-link:focus, .copy-link:visited {color: #B8367E; transition:color .15s ease-in}
+hr{color: #F5F5F5; height: 25%; width: 25%;}
 
-.scrollstyle {
-  padding-top: 2rem;
-  float: right;
-}
-
-.copy-link, .copy-link:link {
-  color: #367eb8;
-  text-decoration: none;
-}
-.copy-link:hover, .copy-link:active, .copy-link:focus, .copy-link:visited {
-  color: #B8367E;
-  transition:color .15s ease-in
-}
-.topnav .nav-link {
-  text-decoration: none;
-  color: #367eb8;
-  border-bottom: 0.2em solid transparent;
-}
-.topnav .nav-link:hover {
-  border-bottom: 0.2em solid #367eb8;
-}
-.topnav .nav-link.active {
-  border-bottom: 0.2em solid #367eb8;
-}
-.navbar .dropdown-toggle {
-  margin-bottom: 0;
-}
+.topnav .nav-link {text-decoration: none; color: #367eb8; border-bottom: 0.2em solid transparent;}
+.topnav .nav-link:hover {border-bottom: 0.2em solid #367eb8;}
+.topnav .nav-link.active {border-bottom: 0.2em solid #367eb8;}
+.navbar .dropdown-toggle {margin-bottom: 0;}
 .nav-link-child, .nav-link-child:hover {color: white;}
 
-.dropdown-menu-arrow {
-  top: -25px;
-  right: auto;
-  left: 50%; /*when I put text-align: center, must comment this out*/
-  position: relative;
-  -webkit-transform: translate(-50%, 0);
-  -o-transform: translate(-50%, 0);
-  transform: translate(-50%, 0);
-}
-.dropdown-menu-arrow:before,
-.dropdown-menu-arrow:after {
-  content: "";
-  position: absolute;
-  display: block;
-  border-width: 10px 11px;
-  border-style: solid;
-  border-color: transparent;
-  z-index: 1001;
-  bottom: -18px;
-  right: -8px;
-  border-bottom-color: #367eb8;
-}
-.applied-menu{right: 50%; left: -50%;}
-.mentoring-menu{left: -20%;}
-.other-menu{left: -25%;}
+@media (min-width: 768px) {
+  .dropdown-menu-arrow {
+    top: -25px;
+    right: auto;
+    left: 50%; /*when I put text-align: center, must comment this out*/
+    position: relative;
+    -webkit-transform: translate(-50%, 0);
+    -o-transform: translate(-50%, 0);
+    transform: translate(-50%, 0);
+  }
+  .dropdown-menu-arrow:before,
+  .dropdown-menu-arrow:after {
+    content: "";
+    position: absolute;
+    display: block;
+    border-width: 10px 11px;
+    border-style: solid;
+    border-color: transparent;
+    z-index: 1001;
+    bottom: -18px;
+    right: -8px;
+    border-bottom-color: #367eb8;
+  }
+  .applied-menu{right: 50%; left: -50%;}
+  .mentoring-menu{left: -20%;}
+  .other-menu{left: -25%;}
 
-.dropdown-menu{
-  display: none;
-  top: 3.5em;
-  margin-top: 0;
-/*  text-align: center; */
-  background-color: #367eb8;
-  -webkit-border-radius: 0 !important; /* creates the square dropdwon*/
-     -moz-border-radius: 0 !important;
-          border-radius: 0 !important;
-}
+  .dropdown-menu{
+    display: none;
+    top: 3.5em;
+    margin-top: 0;
+  /*  text-align: center; */
+    background-color: #367eb8;
+    -webkit-border-radius: 0 !important; /* creates the square dropdwon*/
+       -moz-border-radius: 0 !important;
+            border-radius: 0 !important;
+  }
 
-.dropdown:hover .dropdown-menu, .dropdown:focus .dropdown-menu, .dropdown:visited .dropdown-menu {display: block;}
+  .dropdown:hover .dropdown-menu, .dropdown:focus .dropdown-menu, .dropdown:visited .dropdown-menu {display: block;}
+}
 
 /*.nav-pad{padding-top:2rem!important}
 .nav-pad{padding-bottom:4rem!important}*/
 
 .nav-pad{padding-top:1rem!important; padding-bottom:5rem!important;}
-
 .fa-li, .fa-angle-up{color:#36B870}
 
 .masthead {
@@ -87,6 +69,7 @@
   background-position: center;
   background-repeat: no-repeat;
 }
+
 .bttn {text-align: center; border-radius: 0.5rem; border: none; outline:none}
 .dim{opacity:1}
 .dim,.dim:focus,.dim:hover{transition:opacity .15s ease-in}
@@ -97,6 +80,7 @@
 .bg-blue{background-color:#367eb8}
 .bg-green{background-color:#36B870} /*complementary green to the pink which forms the triad with the blue*/
 .card{border: none}
+
 @media (min-width: 768px) {
     /* show 3 items */
     .carousel-inner .active,
@@ -158,9 +142,4 @@
         display: block;
         visibility: visible;
     }
-}
-hr{
-  color: #F5F5F5;
-  height: 25%;
-  width: 25%;
 }
