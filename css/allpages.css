@@ -2,39 +2,31 @@
   color: #367eb8;
   text-decoration: none;
 }
-
 .copy-link:hover, .copy-link:active, .copy-link:focus, .copy-link:visited {
   color: #B8367E;
   transition:color .15s ease-in
 }
-
 .topnav .nav-link {
   text-decoration: none;
   color: #367eb8;
   border-bottom: 0.2em solid transparent;
 }
-
 .topnav .nav-link:hover {
   border-bottom: 0.2em solid #367eb8;
 }
-
 .topnav .nav-link.active {
   border-bottom: 0.2em solid #367eb8;
 }
-
 .navbar .dropdown-toggle {
   margin-bottom: 0;
 }
-
 .nav-link-child, .nav-link-child:hover {
   color: white;
 }
-
 /*.topnav .nav-link.active,
 .topnav .show > .nav-link {
     border-bottom: 0.2em solid #367eb8;
 } this is here if I want to make the underline continue to show*/
-
 .dropdown-menu-arrow {
   top: -25px;
   right: auto;
@@ -44,7 +36,6 @@
   -o-transform: translate(-50%, 0);
   transform: translate(-50%, 0);
 }
-
 .dropdown-menu-arrow:before,
 .dropdown-menu-arrow:after {
   content: "";
@@ -58,20 +49,16 @@
   right: -8px;
   border-bottom-color: #367eb8;
 }
-
 .applied-menu{
   right: 50%;
   left: -50%;
 }
-
 .mentoring-menu{
   left: -20%;
 }
-
 .other-menu{
   left: -25%; 
 }
-
 .dropdown-menu{
   display: none;
   top: 3.5em;
@@ -98,25 +85,17 @@
   background-position: center;
   background-repeat: no-repeat;
 }
-
 .bttn {text-align: center; border-radius: 2px; border: none; outline:none}
-
 .dim{opacity:1}
 .dim,.dim:focus,.dim:hover{transition:opacity .15s ease-in}
 .dim:focus,.dim:hover{opacity:.5}
 .dim:active,.dim:visited{opacity:.8;transition:opacity .15s ease-out}
-
 .pv2{padding-top:.5rem;padding-bottom:.5rem}
-
 .white{color:#fff}
-
 .bg-blue{background-color:#367eb8}
 .bg-green{background-color:#36B870} /*complementary green to the pink which forms the triad with the blue*/
-
 .card{border: none}
-
 @media (min-width: 768px) {
-
     /* show 3 items */
     .carousel-inner .active,
     .carousel-inner .active + .carousel-item,
@@ -177,9 +156,7 @@
         display: block;
         visibility: visible;
     }
-
 }
-
 hr{
   color: #F5F5F5;
   height: 25%;
