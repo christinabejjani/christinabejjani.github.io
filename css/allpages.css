@@ -1,19 +1,56 @@
+/*font styling*/
 .headfont {font-family: "Playfair Display SC";}
 .mainfont {font-family: "Open Sans";}
 .quotefont {font-family: "Abhaya Libre";}
+
+/*font awesome icon styling*/
 .fa-bars {color: #367eb8;}
 .fa-asterisk {padding-left:0.75rem; padding-right:0.75rem;color:gray;}
 .scrollstyle {padding-top: 2rem; float: right;}
-.copy-link, .copy-link:link {color: #367eb8; text-decoration: none;}
-.copy-link:hover, .copy-link:active, .copy-link:focus, .copy-link:visited {color: #B8367E; transition:color .15s ease-in}
-hr{color: #F5F5F5; height: 25%; width: 25%;}
+.fa-li, .fa-angle-up{color:#36B870;}
 
+/*links and button styling*/
+.copy-link, .copy-link:link {color: #367eb8; text-decoration: underline;}
+.copy-link:hover, .copy-link:active, .copy-link:focus, .copy-link:visited {color: #B8367E; transition:color .15s ease-in;}
+.bttn {text-align: center; border-radius: 0.5rem; border: none; outline:none}
+
+/*transitions */
+.dim{opacity:1}
+.dim,.dim:focus,.dim:hover{transition:opacity .15s ease-in}
+.dim:focus,.dim:hover{opacity:.5}
+.dim:active,.dim:visited{opacity:.8;transition:opacity .15s ease-out}
+
+/*colors*/
+.white{color:#fff}
+.bg-blue{background-color:#367eb8}
+.bg-green{background-color:#36B870} /*complementary green to the pink which forms the triad with the blue*/
+
+/* padding */
+.pv2{padding-top:.5rem;padding-bottom:.5rem}
+
+/* misc */
+hr{color: #F5F5F5; height: 25%; width: 25%;}
+.card{border: none}
+
+/*navbar styling*/
 .topnav .nav-link {text-decoration: none; color: #367eb8; border-bottom: 0.2em solid transparent;}
 .topnav .nav-link:hover {border-bottom: 0.2em solid #367eb8;}
 .topnav .nav-link.active {border-bottom: 0.2em solid #367eb8;}
 .navbar .dropdown-toggle {margin-bottom: 0;}
 .nav-link-child, .nav-link-child:hover {color: white;}
+.nav-link-child {padding-left: 0.5rem;}
+.nav-pad{padding-top:1rem!important; padding-bottom:5rem!important;}
 
+/*the masthead or header image on the pages */
+.masthead {
+  height: 25vh;
+  background-image: url('https://christinabejjani.github.io/files/dukechapel.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/*media requests - hover dropdown menu looks ugly on smaller screens, once the navbar has collapsed, so I've made it only do the dropdown for larger screens */
 @media (min-width: 768px) {
   .dropdown-menu-arrow {
     top: -25px;
@@ -55,32 +92,7 @@ hr{color: #F5F5F5; height: 25%; width: 25%;}
   .dropdown:hover .dropdown-menu, .dropdown:focus .dropdown-menu, .dropdown:visited .dropdown-menu {display: block;}
 }
 
-/*.nav-pad{padding-top:2rem!important}
-.nav-pad{padding-bottom:4rem!important}*/
-
-.nav-pad{padding-top:1rem!important; padding-bottom:5rem!important;}
-.fa-li, .fa-angle-up{color:#36B870}
-
-.masthead {
-  height: 25vh;
-  /*min-height: 500px;*/
-  background-image: url('https://christinabejjani.github.io/files/dukechapel.jpg');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-.bttn {text-align: center; border-radius: 0.5rem; border: none; outline:none}
-.dim{opacity:1}
-.dim,.dim:focus,.dim:hover{transition:opacity .15s ease-in}
-.dim:focus,.dim:hover{opacity:.5}
-.dim:active,.dim:visited{opacity:.8;transition:opacity .15s ease-out}
-.pv2{padding-top:.5rem;padding-bottom:.5rem}
-.white{color:#fff}
-.bg-blue{background-color:#367eb8}
-.bg-green{background-color:#36B870} /*complementary green to the pink which forms the triad with the blue*/
-.card{border: none}
-
+/*media requests - carousel of images on the landing pages for the dropdowns */
 @media (min-width: 768px) {
     /* show 3 items */
     .carousel-inner .active,
