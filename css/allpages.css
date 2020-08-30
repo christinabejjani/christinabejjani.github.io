@@ -27,6 +27,8 @@
 
 /* padding */
 .pv2{padding-top:.5rem;padding-bottom:.5rem}
+.pad1{padding: 1rem;}
+.pad-b75{padding-bottom: 0.75rem;}
 
 /* misc */
 hr{color: #F5F5F5; height: 25%; width: 25%;}
