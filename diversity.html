@@ -23,7 +23,7 @@
 	<meta property='og:title' content='Diversity Philosophy & Portfolio from Christina Bejjani'/>
 	<meta property='og:description' content='Cognitive Psychologist/Neuroscientist · Science Communicator · Lifelong Learner'/>
 	<meta property='og:type' content='website'/>
-	<meta property='og:image' content='files/twitter_card_v2.png'/>
+	<meta property='og:image' content='files/twitter_card_v4.png'/>
 	<meta property="og:image:type" content="image/png">
 	<meta property="og:image:width" content="2058">
 	<meta property="og:image:height" content="821">
@@ -33,7 +33,7 @@
 	<meta name='twitter:site' content='@chbejjani'/>
 	<meta name='twitter:creator' content='@chbejjani'/>
 	<meta name='twitter:url' content='https://christinabejjani.github.io/diversity.html'/>
-	<meta name='twitter:image' content='files/twitter_card_v2.png'/>
+	<meta name='twitter:image' content='files/twitter_card_v4.png'/>
 	<meta name='twitter:description' content='Cognitive Psychologist/Neuroscientist · Science Communicator · Lifelong Learner'/>
 	<meta name='twitter:title' content='Diversity Philosophy & Portfolio from Christina Bejjani'/>
 	
@@ -142,9 +142,9 @@
 							</div>
 						</ul>
 					</div>
-			</nav>
+			</nav><!--i decided that on all summary pages, I'd have cards + blockquotes, ensuring that there was not too much text on one page and that these landing pages also offered something "new"-->
 			<blockquote class="blockquote mb-0 quotefont"><p>The danger of sympathizing with the stranger is the possibility of becoming a stranger.</p>
-			<footer class="blockquote-footer mainfont" style="padding-bottom: 1rem">Toni Morrison, "Being or Becoming the Stranger" in <cite title="The Origin of Others">The Origin of Others</cite></footer></blockquote>
+			<footer class="blockquote-footer mainfont pad-b75">Toni Morrison, "Being or Becoming the Stranger" in <cite title="The Origin of Others">The Origin of Others</cite></footer></blockquote>
 			<hr>
 				<div class="container-fluid">
 					<div class="card mb-3 card-img-top">
@@ -178,10 +178,10 @@
 								</a>
 							</div>
 							<div class="card-body">
-								<h2 class="d-sm-block d-md-block display-6 headfont" style="padding-bottom: 0.75rem">Diversity Philosophy</h2>
+								<h2 class="d-sm-block d-md-block display-6 headfont pad-b75">Diversity Philosophy</h2>
 								<p class="card-text mainfont">"Supporting the educational goals of others has always been important to me, because my mother was unable to finish college due to the Lebanese Civil War and my father’s access to higher education helped my family to succeed. As a first generation Arab-American woman in a post 9/11 U.S., I strongly believe that everyone, no matter their age, race, ethnicity, socioeconomic status, veteran status, sexual orientation, or gender identity, should have the resources they need to obtain fair and beneficial education...."</p>
-								<button id="dsbtn" class="bttn link dim pv2 white bg-green mainfont">Read more</button>
-								<p class="card-text mainfont" style="padding-top: 0.75rem"><small class="text-muted">The above pictures of the frames were taken by <a class="copy-link" href="https://gradschool.duke.edu/about/staff-directory" rel="noopener">John Zhu</a>.</small></p>
+								<button id="dsbtn" class="bttn link dim pv2 white bg-green mainfont" role="button">Read more</button>
+								<p class="card-text mainfont pad-t75"><small class="text-muted">The above pictures of the frames were taken by <a class="copy-link" href="https://gradschool.duke.edu/about/staff-directory" rel="noopener" role="link">John Zhu</a>.</small></p>
 							</div>
 						</div>
 					</div>
@@ -192,14 +192,14 @@
 							<img class="img-fluid d-block rounded" src="files/mindsetpresentation.png" alt="div7">
 						</div>
 						<div class="card-body">
-							<h2 class="d-sm-block d-md-block display-6 headfont" style="padding-bottom: 0.75rem">Diversity Portfolio</h2>
+							<h2 class="d-sm-block d-md-block display-6 headfont pad-b75">Diversity Portfolio</h2>
 							<p class="card-text mainfont">I have committed myself to taking action towards a more equitable society across my university service, teaching, research, and mentoring experiences.</p>
-							<button id="dpbtn" class="bttn link dim pv2 white bg-green mainfont">Read more</button>
+							<button id="dpbtn" class="bttn link dim pv2 white bg-green mainfont" role="button">Read more</button>
 						</div>
 					</div>
 				</div>
-			<div class="scrollstyle mainfont" id="top-scroll">
-				<a class="copy-link" href="#top" rel="tooltip" data-toggle="tooltip" data-placement="bottom" title="Scroll to top">
+			<div class="scrollstyle mainfont" id="top-scroll" aria-labelledby="scroll-to-top">
+				<a class="copy-link" href="#top" rel="tooltip" data-toggle="tooltip" aria-labelledby="tooltip" data-placement="top" title="Scroll to top">
 					<i class="fas fa-angle-up fa-3x"></i>
 				</a>
 			</div>
@@ -215,14 +215,14 @@
 	
 	<script type="text/javascript">
 	$(document).ready(function(){
-
+		//this is the scroll to the top arrow; it selects any select that says href=#top and when you click that link, it animates the html body to slowly scroll to the top
 		$("a[href='#top']").click(function() {
             $('html,body').animate({scrollTop: 0}, "slow");
 			return false;
         });
-		
+		//this is the tooltip hover that explains what the scroll to the top arrow is in case someone is not familiar with that
 		$('[rel=tooltip]').tooltip({ trigger: "hover" });
-		
+		//buttons to link to the other pages
 		$("#dsbtn").click(function(){window.open('https://christinabejjani.github.io/diversitystatement.html', '_self');});
 		
 		$("#dpbtn").click(function(){window.open('https://christinabejjani.github.io/diversityportfolio.html', '_self');});

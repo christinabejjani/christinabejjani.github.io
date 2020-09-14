@@ -23,7 +23,7 @@
 	<meta property='og:title' content='Teaching Philosophy & Portfolio from Christina Bejjani'/>
 	<meta property='og:description' content='Cognitive Psychologist/Neuroscientist · Science Communicator · Lifelong Learner'/>
 	<meta property='og:type' content='website'/>
-	<meta property='og:image' content='files/twitter_card_v2.png'/>
+	<meta property='og:image' content='files/twitter_card_v4.png'/>
 	<meta property="og:image:type" content="image/png">
 	<meta property="og:image:width" content="2058">
 	<meta property="og:image:height" content="821">
@@ -33,7 +33,7 @@
 	<meta name='twitter:site' content='@chbejjani'/>
 	<meta name='twitter:creator' content='@chbejjani'/>
 	<meta name='twitter:url' content='https://christinabejjani.github.io/teaching.html'/>
-	<meta name='twitter:image' content='files/twitter_card_v2.png'/>
+	<meta name='twitter:image' content='files/twitter_card_v4.png'/>
 	<meta name='twitter:description' content='Cognitive Psychologist/Neuroscientist · Science Communicator · Lifelong Learner'/>
 	<meta name='twitter:title' content='Teaching Philosophy & Portfolio from Christina Bejjani'/>
 	
@@ -142,7 +142,7 @@
 							</div>
 						</ul>
 					</div>
-			</nav>
+			</nav><!--i decided that on all summary pages, I'd have cards + blockquotes, ensuring that there was not too much text on one page and that these landing pages also offered something "new"-->
 			<blockquote class="blockquote mb-0 quotefont"><p>[The teacher] who is indeed wise does not bid you to enter the house of [her] wisdom, but rather leads you to the threshold of your mind.</p>
 			<footer class="blockquote-footer mainfont" style="padding-bottom: 1rem">Khalil Gibran, "On Teaching" in <cite title="The Prophet">The Prophet</cite></footer></blockquote>
 			<hr>
@@ -207,8 +207,8 @@
 						</div>
 					</div>
 				</div>
-			<div class="scrollstyle mainfont" id="top-scroll">
-				<a class="copy-link" href="#top" rel="tooltip" data-toggle="tooltip" data-placement="bottom" title="Scroll to top">
+			<div class="scrollstyle mainfont" id="top-scroll" aria-labelledby="scroll-to-top">
+				<a class="copy-link" href="#top" rel="tooltip" data-toggle="tooltip" aria-labelledby="tooltip" data-placement="top" title="Scroll to top">
 					<i class="fas fa-angle-up fa-3x"></i>
 				</a>
 			</div>
@@ -225,13 +225,14 @@
 	<script type="text/javascript">
 	$(document).ready(function(){
 
+		//this is the scroll to the top arrow; it selects any select that says href=#top and when you click that link, it animates the html body to slowly scroll to the top
 		$("a[href='#top']").click(function() {
             $('html,body').animate({scrollTop: 0}, "slow");
 			return false;
         });
-		
+		//this is the tooltip hover that explains what the scroll to the top arrow is in case someone is not familiar with that
 		$('[rel=tooltip]').tooltip({ trigger: "hover" });
-		
+		//buttons to link to the other pages
 		$("#tsbtn").click(function(){window.open('https://christinabejjani.github.io/teachingstatement.html', '_self');});
 		
 		$("#tpbtn").click(function(){window.open('https://christinabejjani.github.io/teachingportfolio.html', '_self');});
