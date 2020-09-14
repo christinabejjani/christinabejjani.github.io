@@ -291,9 +291,10 @@
 	<script type="text/javascript">
 	$(document).ready(function(){
 
-		$("collapbtn").click(function() {
-            $('collapbtn').html('Read less');
-			return false;
+		$('collapbtn').click(function() {
+            $(this).text(function(i,old){
+				return old=='Read more' ?  'Read less' : 'Read more';
+			});
         });
 
 		//this is the scroll to the top arrow; it selects any select that says href=#top and when you click that link, it animates the html body to slowly scroll to the top
