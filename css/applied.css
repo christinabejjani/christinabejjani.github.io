@@ -1,11 +1,10 @@
 .nav-pad{padding-top:1rem!important; padding-bottom:5rem!important; justify-content: center;}
 
-button.bttn.collapsed:before {
-    content:'Read more' ;
+[data-toggle="collapse"].collapsed .if-not-collapsed {
+  display: none;
 }
-
-button.bttn:before {
-    content:'Read less' ;
+[data-toggle="collapse"]:not(.collapsed) .if-collapsed {
+  display: none;
 }
 
 /* Prevent image stretching is it's resized */
