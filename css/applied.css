@@ -1,5 +1,14 @@
 .nav-pad{padding-top:1rem!important; padding-bottom:5rem!important; justify-content: center;}
 
+button.bttn.collapsed:before
+{
+    content:'Read more' ;
+}
+button.bttn:before
+{
+    content:'Read less' ;
+}
+
 /* Prevent image stretching is it's resized */
 .card-img-top {
     object-fit: cover;
