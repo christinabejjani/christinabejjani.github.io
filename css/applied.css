@@ -7,9 +7,11 @@
   display: none;
 }
 
-.summary{color: #367eb8; text-decoration: underline;}
-.summary:focus, .summary:visited, .summary:active{border: none; outline:none}
-.summary:active{color: #B8367E}
+details > summary {text-decoration: none; border: none; outline:none;}
+details summary::-webkit-details-marker{color: #367eb8;}
+details[open] summary::-webkit-details-marker {
+    color: #B8367E;
+}
 
 /* Prevent image stretching is it's resized */
 .card-img-top {
