@@ -2,6 +2,10 @@
 
 img{height:10vw;}
 
+.collapse.show .fas {
+    color: #B8367E;
+}
+
 @media (min-width: 768px) {
   .YTvideo{width:560px; height:315px}
 }
