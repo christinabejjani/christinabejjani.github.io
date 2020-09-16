@@ -6,3 +6,6 @@
 [data-toggle="collapse"]:not(.collapsed) .if-collapsed {
   display: none;
 }
+.collapse.show .fas {
+    color: #B8367E;
+}
