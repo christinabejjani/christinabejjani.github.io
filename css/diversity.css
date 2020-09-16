@@ -9,3 +9,5 @@
 .collapse.show .fas {
     color: #B8367E;
 }
+
+img[alt*="div7"] {height:25vh; }
