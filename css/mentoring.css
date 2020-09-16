@@ -1,6 +1,6 @@
 .nav-pad{padding-top:1rem!important; padding-bottom:5rem!important; justify-content: center;}
 
-.img{height:10vw;}
+img{height:10vw;}
 
 @media (min-width: 768px) {
   .YTvideo{width:560px; height:315px}
