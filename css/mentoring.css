@@ -8,7 +8,7 @@ img{height:10vw;}
 [data-toggle="collapse"]:not(.collapsed) .if-collapsed {
   display: none;
 }
-.collapse.show .fas {
+.collapse.show .fas:not(.fa-spin) {
     color: #B8367E;
 }
 
