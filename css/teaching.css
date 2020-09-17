@@ -1,12 +1,13 @@
 .nav-pad{padding-top:1rem!important; padding-bottom:5rem!important; justify-content: center;}
 
+img{height:10vw;}
+
 [data-toggle="collapse"].collapsed .if-not-collapsed {
   display: none;
 }
 [data-toggle="collapse"]:not(.collapsed) .if-collapsed {
   display: none;
 }
-
-.collapse.show .fas {
+.collapse.show .fas:not(.fa-spin) {
     color: #B8367E;
 }
