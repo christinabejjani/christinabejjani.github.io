@@ -91,9 +91,9 @@ hr{color: #F5F5F5; height: 25%; width: 25%;}
     margin-top: 0;
   /*  text-align: center; */
     background-color: #367eb8;
-    -webkit-border-radius: 0 !important; /* creates the square dropdwon*/
-       -moz-border-radius: 0 !important;
-            border-radius: 0 !important;
+    -webkit-border-radius: 0.5rem !important; /* 0 if i want square dropdwon*/
+       -moz-border-radius: 0.5rem !important;
+            border-radius: 0.5rem !important;
   }
 
   .dropdown:hover .dropdown-menu, .dropdown:focus .dropdown-menu, .dropdown:visited .dropdown-menu {display: block;}
