@@ -42,7 +42,7 @@ hr{color: #F5F5F5; height: 25%; width: 25%;}
 /*navbar styling*/
 .topnav .nav-link {text-decoration: none; color: #367eb8; border-bottom: 0.2em solid transparent;}
 .topnav .nav-link:hover {border-bottom: 0.2em solid #367eb8;}
-.topnav .nav-link.active {border-bottom: 0.2em solid #367eb8;}
+.topnav .nav-link:active {border-bottom: 0.2em solid #367eb8;}
 .navbar .dropdown-toggle {margin-bottom: 0;}
 .nav-link-child, .nav-link-child:hover {color: white;}
 .nav-link-child {padding-left: 0.5rem;}
