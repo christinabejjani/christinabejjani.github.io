@@ -231,24 +231,25 @@
 		$("#pubbtn").click(function(){window.open('https://christinabejjani.github.io/publications.html', '_self');});
 
 		$('.researchCarousel').slick({
-			centerMode: true,
 			autoplay: true,
-			autoplaySpeed: 5000,
+			autoplaySpeed: 9000,
 			slidesToShow: 3,
+			arrows: true,
+			dots: true,
 			responsive: [
 			{
 				breakpoint: 768,
 				settings: {
-					arrows: false,
-					centerMode: true,
-					slidesToShow: 3
+					arrows: true,
+					slidesToShow: 3,
+					infinite: true,
+					dots: true
 			  }
 			},
 			{
 				breakpoint: 480,
 				settings: {
-					arrows: false,
-					centerMode: true,
+					arrows: true,
 					slidesToShow: 1
 			  }
 			}
