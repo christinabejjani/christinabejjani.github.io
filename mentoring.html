@@ -42,6 +42,8 @@
 	
     <!-- Bootstrap core CSS + font awesome JS for icons-->
     <link href="css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+	<link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
 	<script src="https://kit.fontawesome.com/25e7f7a6fa.js" crossorigin="anonymous"></script>
 	
 	<!-- Custom CSS -->
@@ -160,41 +162,19 @@
 				</div>
 				<div class="container-fluid">
 					<div class="card mb-3 card-img-top">
-						<div id="mentCarousel" class="carousel slide w-100" data-ride="carousel" data-interval="9000">
-							<div class="carousel-inner row w-10 mx-auto" role="listbox">
-								<div class="carousel-item col-md-4 active">
-									<img class="img-fluid mx-auto d-block" src="files/ziwei1.JPG" alt="ment1">
-								</div>
-								<div class="carousel-item col-md-4">
-									<img class="img-fluid mx-auto d-block" src="files/ziwei2.JPG" alt="ment2">
-								</div>
-								<div class="carousel-item col-md-4">
-									<img class="img-fluid mx-auto d-block" src="files/ziwei3.jpg" alt="ment3">
-								</div>
-								<div class="carousel-item col-md-4">
-									<img class="img-fluid mx-auto d-block" src="files/ziwei4.jpg" alt="ment4">
-								</div>
-								<div class="carousel-item col-md-4">
-									<img class="img-fluid mx-auto d-block" src="files/vin1.png" alt="ment5">
-								</div>
-								<div class="carousel-item col-md-4">
-									<img class="img-fluid mx-auto d-block" src="files/mentoring7.jpg" alt="ment6">
-								</div>
-								<a class="carousel-control-prev" href="#mentCarousel" role="button" data-slide="prev">
-									<i class="fa fa-chevron-left fa-lg text-muted"></i>
-									<span class="sr-only">Previous</span>
-								</a>
-								<a class="carousel-control-next" href="#mentCarousel" role="button" data-slide="next">
-									<i class="fa fa-chevron-right fa-lg text-muted"></i>
-									<span class="sr-only">Next</span>
-								</a>
+							<div class="mentCarousel" id="mentCarousel">
+								<div> <img class="pad-l1 img-fluid mx-auto d-block" src="files/ziwei1.JPG" alt="ment1"> </div>
+								<div> <img class="pad-l1 img-fluid mx-auto d-block" src="files/ziwei2.JPG" alt="ment2"> </div>
+								<div> <img class="pad-l1 img-fluid mx-auto d-block" src="files/ziwei3.jpg" alt="ment3"> </div>
+								<div> <img class="pad-l1 img-fluid mx-auto d-block" src="files/ziwei4.jpg" alt="ment4"> </div>
+								<div> <img class="pad-l1 img-fluid mx-auto d-block" src="files/vin1.png" alt="ment5"> </div>
+								<div> <img class="pad-l1 img-fluid mx-auto d-block" src="files//mentoring7.jpg" alt="ment6"> </div>
 							</div>
 							<div class="card-body">
 								<h2 class="d-sm-block d-md-block display-6 headfont pad-b75">Mentoring Portfolio</h2>
-								<p class="card-text mainfont">I have (co-)mentored eleven research assistants and many students, completed additional professional development workshops, been selected for and started various programs aimed at building inclusive environments that support the success of all learners, and more.</p>
+								<p class="card-text mainfont">I have (co-)mentored eleven research assistants and many students, completed additional professional development workshops, and been selected for and started various programs aimed at building inclusive environments that support the success of all learners.</p>
 								<button id="mpbtn" class="bttn link dim pv2 white bg-green mainfont">Read more</button>
 							</div>
-						</div>
 					</div>
 				</div>
 			<div class="scrollstyle mainfont pad1" id="top-scroll" aria-labelledby="scroll-to-top">
@@ -210,6 +190,8 @@
     <!-- Placed at the end of the document so the pages load faster -->
 	
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+	<script type="text/javascript" src="slick/slick.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
 	
@@ -228,28 +210,27 @@
 		
 		$("#mpbtn").click(function(){window.open('https://christinabejjani.github.io/mentoringportfolio.html', '_self');});
 
-		//from: https://www.codeply.com/go/s3I9ivCBYH/bootstrap-4-responsive-carousel-one-at-a-time
-		$('#mentCarousel').on('slide.bs.carousel', function (e) {
-			var $e = $(e.relatedTarget);
-			
-			var idx = $e.index();
-			console.log("IDX :  " + idx);
-			
-			var itemsPerSlide = 3;
-			var totalItems = $('.carousel-item').length;
-			
-			if (idx >= totalItems-(itemsPerSlide-1)) {
-				var it = itemsPerSlide - (totalItems - idx);
-				for (var i=0; i<it; i++) {
-					// append slides to end
-					if (e.direction=="left") {
-						$('.carousel-item').eq(i).appendTo('.carousel-inner');
-					}
-					else {
-						$('.carousel-item').eq(0).appendTo('.carousel-inner');
-					}
-				}
+		$('.mentCarousel').slick({
+			autoplay: true,
+			autoplaySpeed: 9000,
+			slidesToShow: 3,
+			dots: true,
+			responsive: [
+			{
+				breakpoint: 600,
+				settings: {
+					slidesToShow: 2,
+					infinite: true,
+					dots: true
+			  }
+			},
+			{
+				breakpoint: 480,
+				settings: {
+					slidesToShow: 1
+			  }
 			}
+		  ]
 		});
 	});
 	</script>

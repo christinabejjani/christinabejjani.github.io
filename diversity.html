@@ -42,6 +42,8 @@
 	
     <!-- Bootstrap core CSS + font awesome JS for icons-->
     <link href="css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+	<link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
 	<script src="https://kit.fontawesome.com/25e7f7a6fa.js" crossorigin="anonymous"></script>
 	
 	<!-- Custom CSS -->
@@ -148,34 +150,13 @@
 			<hr>
 				<div class="container-fluid">
 					<div class="card mb-3 card-img-top">
-						<div id="divCarousel" class="carousel slide w-100" data-ride="carousel" data-interval="9000">
-							<div class="carousel-inner row w-10 mx-auto" role="listbox">
-								<div class="carousel-item col-md-4 active">
-									<img class="img-fluid mx-auto d-block" src="files/mentoring1.jpg" alt="div1">
-								</div>
-								<div class="carousel-item col-md-4">
-									<img class="img-fluid mx-auto d-block" src="files/mentoring2.jpg" alt="div2">
-								</div>
-								<div class="carousel-item col-md-4">
-									<img class="img-fluid mx-auto d-block" src="files/mentoring3.jpg" alt="div3">
-								</div>
-								<div class="carousel-item col-md-4">
-									<img class="img-fluid mx-auto d-block" src="files/mentoring4.jpg" alt="div4">
-								</div>
-								<div class="carousel-item col-md-4">
-									<img class="img-fluid mx-auto d-block" src="files/mentoring5.jpg" alt="div5">
-								</div>
-								<div class="carousel-item col-md-4">
-									<img class="img-fluid mx-auto d-block" src="files/mentoring6.jpg" alt="div6">
-								</div>
-								<a class="carousel-control-prev" href="#divCarousel" role="button" data-slide="prev">
-									<i class="fa fa-chevron-left fa-lg text-muted"></i>
-									<span class="sr-only">Previous</span>
-								</a>
-								<a class="carousel-control-next" href="#divCarousel" role="button" data-slide="next">
-									<i class="fa fa-chevron-right fa-lg text-muted"></i>
-									<span class="sr-only">Next</span>
-								</a>
+							<div class="divCarousel" id="divCarousel">
+								<div> <img class="pad-l1 img-fluid mx-auto d-block" src="files/mentoring1.jpg" alt="div1"> </div>
+								<div> <img class="pad-l1 img-fluid mx-auto d-block" src="files/mentoring2.jpg" alt="div2"> </div>
+								<div> <img class="pad-l1 img-fluid mx-auto d-block" src="files/mentoring3.jpg" alt="div3"> </div>
+								<div> <img class="pad-l1 img-fluid mx-auto d-block" src="files/mentoring4.jpg" alt="div4"> </div>
+								<div> <img class="pad-l1 img-fluid mx-auto d-block" src="files/mentoring5.jpg" alt="div5"> </div>
+								<div> <img class="pad-l1 img-fluid mx-auto d-block" src="files/mentoring6.jpg" alt="div6"> </div>
 							</div>
 							<div class="card-body">
 								<h2 class="d-sm-block d-md-block display-6 headfont pad-b75">Diversity Philosophy</h2>
@@ -183,7 +164,6 @@
 								<button id="dsbtn" class="bttn link dim pv2 white bg-green mainfont" role="button">Read more</button>
 								<p class="card-text mainfont pad-t75"><small class="text-muted">The above pictures of the frames were taken by <a class="copy-link" href="https://gradschool.duke.edu/about/staff-directory" rel="noopener" role="link">John Zhu</a>.</small></p>
 							</div>
-						</div>
 					</div>
 				</div>
 				<div class="card card-img-top mb-3">
@@ -212,6 +192,8 @@
     <!-- Placed at the end of the document so the pages load faster -->
 	
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+	<script type="text/javascript" src="slick/slick.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
 	
@@ -229,28 +211,27 @@
 		
 		$("#dpbtn").click(function(){window.open('https://christinabejjani.github.io/diversityresources.html', '_self');});
 
-		//from: https://www.codeply.com/go/s3I9ivCBYH/bootstrap-4-responsive-carousel-one-at-a-time
-		$('#divCarousel').on('slide.bs.carousel', function (e) {
-			var $e = $(e.relatedTarget);
-			
-			var idx = $e.index();
-			console.log("IDX :  " + idx);
-			
-			var itemsPerSlide = 3;
-			var totalItems = $('.carousel-item').length;
-			
-			if (idx >= totalItems-(itemsPerSlide-1)) {
-				var it = itemsPerSlide - (totalItems - idx);
-				for (var i=0; i<it; i++) {
-					// append slides to end
-					if (e.direction=="left") {
-						$('.carousel-item').eq(i).appendTo('.carousel-inner');
-					}
-					else {
-						$('.carousel-item').eq(0).appendTo('.carousel-inner');
-					}
-				}
+		$('.divCarousel').slick({
+			autoplay: true,
+			autoplaySpeed: 9000,
+			slidesToShow: 3,
+			dots: true,
+			responsive: [
+			{
+				breakpoint: 600,
+				settings: {
+					slidesToShow: 2,
+					infinite: true,
+					dots: true
+			  }
+			},
+			{
+				breakpoint: 480,
+				settings: {
+					slidesToShow: 1
+			  }
 			}
+		  ]
 		});
 
 
