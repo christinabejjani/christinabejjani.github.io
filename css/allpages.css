@@ -38,6 +38,7 @@
 /* misc */
 hr{color: #F5F5F5; height: 25%; width: 25%;}
 .card{border: none}
+.card-header{background-color:white;}
 
 /*navbar styling*/
 .topnav .nav-link {text-decoration: none; color: #367eb8; border-bottom: 0.2em solid transparent;}
