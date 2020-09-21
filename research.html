@@ -42,6 +42,7 @@
 	
     <!-- Bootstrap core CSS + font awesome JS for icons-->
     <link href="css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/slick.css"/>
 	<script src="https://kit.fontawesome.com/25e7f7a6fa.js" crossorigin="anonymous"></script>
 	
 	<!-- Custom CSS -->
@@ -220,6 +221,7 @@
     <!-- Bootstrap core JavaScript-->
     <!-- Placed at the end of the document so the pages load faster -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script type="text/javascript" src="js/slick.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
 	
@@ -237,28 +239,29 @@
 		
 		$("#pubbtn").click(function(){window.open('https://christinabejjani.github.io/publications.html', '_self');});
 
-		//from: https://www.codeply.com/go/s3I9ivCBYH/bootstrap-4-responsive-carousel-one-at-a-time
-		$('#researchCarousel').on('slide.bs.carousel', function (e) {
-			var $e = $(e.relatedTarget);
-			
-			var idx = $e.index();
-			console.log("IDX :  " + idx);
-			
-			var itemsPerSlide = 3;
-			var totalItems = $('.carousel-item').length;
-			
-			if (idx >= totalItems-(itemsPerSlide-1)) {
-				var it = itemsPerSlide - (totalItems - idx);
-				for (var i=0; i<it; i++) {
-					// append slides to end
-					if (e.direction=="left") {
-						$('.carousel-item').eq(i).appendTo('.carousel-inner');
-					}
-					else {
-						$('.carousel-item').eq(0).appendTo('.carousel-inner');
-					}
-				}
+		$('.researchCarousel').slick({
+			centerMode: true,
+			autoplay: true,
+			autoplaySpeed: 5000,
+			slidesToShow: 3,
+			responsive: [
+			{
+				breakpoint: 768,
+				settings: {
+					arrows: false,
+					centerMode: true,
+					slidesToShow: 3
+			  }
+			},
+			{
+				breakpoint: 480,
+				settings: {
+					arrows: false,
+					centerMode: true,
+					slidesToShow: 1
+			  }
 			}
+		  ]
 		});
 	});
 	</script>
