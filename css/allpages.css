@@ -34,6 +34,7 @@
 .pad-b75{padding-bottom: 0.75rem;}
 .pad-t75{padding-top: 0.75rem;}
 .pad-t125{padding-top: 1.25rem;}
+.pad-lr{padding-left: 0.75rem; padding-right: 0.75rem;}
 
 /* misc */
 hr{color: #F5F5F5; height: 25%; width: 25%;}
