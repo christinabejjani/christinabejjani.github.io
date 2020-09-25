@@ -48,7 +48,7 @@ hr{color: #F5F5F5; height: 25%; width: 25%;}
 .navbar .dropdown-toggle {margin-bottom: 0;}
 .nav-link-child, .nav-link-child:hover {color: white;}
 .nav-link-child {padding-left: 0.5rem;}
-.nav-pad{padding-top:1rem!important; padding-bottom:5rem!important; font-weight: 500;}
+.nav-pad{padding-top:1rem!important; padding-bottom:5rem!important; font-size: 1.04rem;}
 
 /*the masthead or header image on the pages */
 .masthead {
