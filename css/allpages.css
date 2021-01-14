@@ -4,13 +4,13 @@
 .quotefont {font-family: "Abhaya Libre";}
 
 /*font awesome icon styling*/
-.fa-bars {color: #367eb8;}
+.fa-bars {color: #3479B2;}
 .fa-asterisk {padding-left:0.75rem; padding-right:0.75rem;color:gray;}
 .scrollstyle {padding-top: 2rem; float: right;}
-.fa-li, .fa-angle-up{color:#36B870;}
+.fa-li, .fa-angle-up{color:#278652;}
 
 /*links and button styling*/
-.copy-link, .copy-link:link {color: #367eb8; text-decoration: underline;}
+.copy-link, .copy-link:link {color: #3479B2; text-decoration: underline;}
 .copy-link:hover, .copy-link:active, .copy-link:focus, .copy-link:visited {color: #B8367E; transition:color .15s ease-in;}
 .bttn, .bttn:focus, .bttn:visited, .bttn:active {text-align: center; border-radius: 0.25rem; border: none; outline:none}
 
@@ -23,7 +23,7 @@
 /*colors*/
 .white{color:#fff}
 .black{color:#000}
-.bg-blue{background-color:#367eb8}
+.bg-blue{background-color:#3479B2}
 .bg-green{background-color:#278652} /*changed to make accessibility standard w/ white text (prev: complementary green to the pink which forms the triad with the blue)*/
 
 /* padding */
@@ -42,9 +42,9 @@ hr{color: #F5F5F5; height: 25%; width: 25%;}
 .card-header{background-color:white;}
 
 /*navbar styling*/
-.topnav .nav-link {text-decoration: none; color: #367eb8; border-bottom: 0.2em solid transparent;}
-.topnav .nav-link:hover {border-bottom: 0.2em solid #367eb8;}
-.topnav .nav-link:active {border-bottom: 0.2em solid #367eb8;}
+.topnav .nav-link {text-decoration: none; color: #3479B2; border-bottom: 0.2em solid transparent;}
+.topnav .nav-link:hover {border-bottom: 0.2em solid #3479B2;}
+.topnav .nav-link:active {border-bottom: 0.2em solid #3479B2;}
 .navbar .dropdown-toggle {margin-bottom: 0;}
 .nav-link-child, .nav-link-child:hover {color: white;}
 .nav-link-child {padding-left: 0.5rem;}
@@ -81,7 +81,7 @@ hr{color: #F5F5F5; height: 25%; width: 25%;}
     z-index: 1001;
     bottom: -18px;
     right: -8px;
-    border-bottom-color: #367eb8;
+    border-bottom-color: #3479B2;
   }
   .applied-menu{right: 50%; left: -50%;}
   .mentoring-menu{left: -20%;}
@@ -92,7 +92,7 @@ hr{color: #F5F5F5; height: 25%; width: 25%;}
     top: 3.5em;
     margin-top: 0;
   /*  text-align: center; */
-    background-color: #367eb8;
+    background-color: #3479B2;
     -webkit-border-radius: 0.25rem !important; /* 0 if i want square dropdwon; rn .25 is "rounded" class on bootstrap to match images*/
        -moz-border-radius: 0.25rem !important;
             border-radius: 0.25rem !important;
