@@ -13,6 +13,9 @@
 .copy-link, .copy-link:link {color: #3479B2; text-decoration: underline;}
 .copy-link:hover, .copy-link:active, .copy-link:focus, .copy-link:visited {color: #B8367E; transition:color .15s ease-in;}
 .bttn, .bttn:focus, .bttn:visited, .bttn:active {text-align: center; border-radius: 0.25rem; border: none; outline:none}
+.jumbotron .copy-link {color: #2E6C9E;} /* accessibility for color contrast */
+.jumbotron .copy-link:hover, .copy-link:active, .copy-link:focus, .copy-link:visited {color: #B8367E;}
+
 
 /*transitions */
 .dim{opacity:1}
