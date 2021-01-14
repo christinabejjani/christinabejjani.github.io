@@ -24,7 +24,7 @@
 .white{color:#fff}
 .black{color:#000}
 .bg-blue{background-color:#367eb8}
-.bg-green{background-color:#36B870} /*complementary green to the pink which forms the triad with the blue*/
+.bg-green{background-color:#278652} /*changed to make accessibility standard w/ white text (prev: complementary green to the pink which forms the triad with the blue)*/
 
 /* padding */
 .pv2{padding-top:.5rem;padding-bottom:.5rem}
