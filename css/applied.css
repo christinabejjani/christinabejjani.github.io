@@ -8,7 +8,7 @@
 }
 
 details > summary {text-decoration: none; border: none; outline:none;}
-details summary::-webkit-details-marker{color: #367eb8;}
+details summary::-webkit-details-marker{color: #3479B2;}
 details[open] summary::-webkit-details-marker {
     color: #B8367E;
 }
