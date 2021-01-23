@@ -54,10 +54,11 @@ hr{color: #F5F5F5; height: 25%; width: 25%;}
 .nav-pad{padding-top:1rem!important; padding-bottom:5rem!important; font-size: 1.04rem;}
 .nav-link:active, .active {font-weight: bold;}
 
-/*the masthead or header image on the pages */
+/*the masthead or header image on the pages - 1st version: https://christinabejjani.github.io/files/dukechapel.jpg; others considered: https://unsplash.com/photos/so1L3jsdD3Y; https://unsplash.com/photos/IHfOpAzzjHM; https://unsplash.com/photos/xcQWMPm9fG8; https://unsplash.com/photos/NC9r9ksBksI; and chosen: https://unsplash.com/photos/DjlKxYFJlTc 
+<span>Photo by <a href="https://unsplash.com/@elliottengelmann?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Elliott Engelmann</a> on <a href="https://unsplash.com/?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>*/
 .masthead {
   height: 25vh;
-  background-image: url('https://christinabejjani.github.io/files/dukechapel.jpg');
+  background-image: url('https://images.unsplash.com/photo-1439792675105-701e6a4ab6f0?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1352&q=80');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
