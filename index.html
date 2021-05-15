@@ -69,29 +69,29 @@
 				<div class="col-md-9 col-lg-9 col-xl-7"> <!-- col-md-9 indicates 9 columns of < 720 px, col-lg-9 indicates < 960 px-->
 					<div class="d-flex align-items-center"> <!--now w/in the column we've now created that's next to the md-column and background image, be flexible w/ item placement & align in center -->
 						<div class="col-lg-9 mx-auto"> <!--in bootstrap spacing, m means margin, x refers to left and right, so this sets auto margins to left and right for 9 columns of < 960 px -->
-							<nav class="navbar-nav navbar-expand-lg nav-pad headfont" role = "navigation"> <!--Here I'm establishing the navbar, having it expand ONLY when the display is at the lg (960 px) value; I chose that because I use only half the page with the about page, so I have to make the navbar collapse sooner-->
-									  <div class="navbar-header d-sm-block d-md-block d-lg-none"> <!--So the collapse bars appear on sm and md displays here-->
-										  <button type = "button" class = "navbar-toggle" data-toggle = "collapse" data-target = "#navbar-collapse" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+							<!-- <nav class="navbar-nav navbar-expand-lg nav-pad headfont" role = "navigation"> <!--Here I'm establishing the navbar, having it expand ONLY when the display is at the lg (960 px) value; I chose that because I use only half the page with the about page, so I have to make the navbar collapse sooner-->
+							<!--		  <div class="navbar-header d-sm-block d-md-block d-lg-none"> <!--So the collapse bars appear on sm and md displays here-->
+							<!--			  <button type = "button" class = "navbar-toggle" data-toggle = "collapse" data-target = "#navbar-collapse" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
 											 <span class="navbar-toggler-icon">
 												<i class="fas fa-bars"></i>
 											 </span>
 										  </button>
 									   </div>
 										<!--Note that ID on this collapse navbar-collapse class MUST match the data-target for the button above-->
-										<div class="collapse navbar-collapse" id="navbar-collapse">
+							<!--			<div class="collapse navbar-collapse" id="navbar-collapse">
 										<ul class="navbar-nav mr-auto topnav" role="navigation"> <!--mr means margin right auto, topnav is the version of the navbar where it underlines hovered links-->
-											<li class="nav-item"> <!--Each item in navbar is indicated by nav-item; i've put target="_self" to override the default of opening in new tab (_blank) and sr refers to screen readers -->
-												<a class="nav-link active" href="index.html" target="_self" role="link">About<span class="sr-only">(current)</span></a>
+							<!--				<li class="nav-item"> <!--Each item in navbar is indicated by nav-item; i've put target="_self" to override the default of opening in new tab (_blank) and sr refers to screen readers -->
+							<!--					<a class="nav-link active" href="index.html" target="_self" role="link">About<span class="sr-only">(current)</span></a>
 											</li>
 											<li class="nav-item">
 												<a class="nav-link" href="appliedresearch.html" target="_self" role="link">Portfolio</a>
 											</li>
 										</ul>
 										</div>
-							</nav>	
-							<h1 class="d-none d-sm-none d-md-block display-4 headfont">Christina Bejjani</h1><!--Hidden only on sm displays--->
-							<h1 class="d-sm-block d-md-none display-4 headfont">C. Bejjani</h1> <!--Visible only on sm displays--->
-							<h4 class="display-6 mainfont"><em>PhD candidate at Duke University </em></h4>
+							</nav>	-->
+							<h1 class="d-none d-sm-none d-md-block display-4 headfont">Christina Bejjani, PhD</h1><!--Hidden only on sm displays--->
+							<h1 class="d-sm-block d-md-none display-4 headfont">C. Bejjani, PhD</h1> <!--Visible only on sm displays--->
+							<h4 class="display-6 mainfont"><em>Cognitive scientist in edtech</em></h4>
 								<div class="row justify-content-start mainfont pad1"> <!--Icons and links; liked the idea of all black minus splash of cover w/ hovering-->
 									<a class="svg" href="https://scholar.google.com/citations?user=WKNC9F8AAAAJ&hl=en&oi=ao" rel="noopener" role="link"><!--Notably I got most of the svg information from google searches-->
 									<!--rel noopener is for security issues, given default target=_blank; see https://web.dev/external-anchors-use-rel-noopener/ -->
@@ -150,7 +150,7 @@
 								</div>
 							<!--Finally the main body of the page; I use a serif font for headers/navbar + sans serif for the web paragraphs-->
 							<div class="mainfont"><p> I am a <b>cognitive scientist</b> dedicated to answering questions about human behavior with methodological and analytical <i>rigor</i>, promoting an <i>inclusive</i> community that grows potential for all learners, and <i>learning</i> new skills and frameworks. </p>
-							<p>I earned a B.A. in neuroscience from <a href="https://www.pomona.edu/" rel="noopener" class="copy-link" role="link">Pomona College</a> in 2013 and worked as a <a href="http://rissmanlab.psych.ucla.edu/rissmanlab/Home.html" rel="noopener" class="copy-link" role="link">research assistant at UCLA</a> before becoming the lab manager for the <a href="http://tricomilab.wixsite.com/ldmlab/previous-people" rel="noopener" class="copy-link" role="link">Learning & Decision Making lab at Rutgers-Newark</a> in 2014. I joined <a href="http://www.egnerlab.org/people/" rel="noopener" class="copy-link" role="link">the Egner lab</a> at Duke University as a cognitive <a href="https://psychandneuro.duke.edu/" rel="noopener" class="copy-link" role="link">Psychology & Neuroscience</a> PhD student in 2016 and am scheduled to defend my dissertation on March 29, 2021.</p>
+							<p>I earned a B.A. in neuroscience from <a href="https://www.pomona.edu/" rel="noopener" class="copy-link" role="link">Pomona College</a> in 2013 and worked as a <a href="http://rissmanlab.psych.ucla.edu/rissmanlab/Home.html" rel="noopener" class="copy-link" role="link">research assistant at UCLA</a> before becoming the lab manager for the <a href="http://tricomilab.wixsite.com/ldmlab/previous-people" rel="noopener" class="copy-link" role="link">Learning & Decision Making lab at Rutgers-Newark</a> in 2014. I then earned my PhD in cognitive <a href="https://psychandneuro.duke.edu/" rel="noopener" class="copy-link" role="link">Psychology & Neuroscience</a> as part of <a href="http://www.egnerlab.org/people/" rel="noopener" class="copy-link" role="link">the Egner lab</a> at Duke University. I now work at Guild Education.</p>
 
 							<p class="pad-b75">If you're looking for my old academic website, you can find it <a href="https://christinabejjani.github.io/ac/" class="copy-link" role="link">here</a>.</p>
 					
